@@ -85,7 +85,8 @@ const Hero = () => {
                                         outline-none shadow-lg hover:scale-105 hover:shadow-xl focus:scale-110 hover:bg-yellow-600 active:scale-105 transition-all"
                         >
                             <span className='hidden xxs:flex'>Explore</span> Our Services{" "}
-                            <ArrowForwardIcon className=" xxs:opacity-80 group-hover:translate-x-1 transition-all" fontSize={isSmallScreen ? 'small' : 'medium'} style={xs ? {fontSize: '12px'} : {fontSize: '16px'}} />
+                            <ArrowForwardIcon className=" xxs:opacity-80 group-hover:translate-x-1 transition-all" fontSize={isSmallScreen ? 'small' : 'medium'} />
+                            {/* <ArrowForwardIcon className=" xxs:opacity-80 group-hover:translate-x-1 transition-all" fontSize={isSmallScreen ? 'small' : 'medium'} style={xs ? {fontSize: '12px'} : {fontSize: '16px'}} /> */}
                         </Link>
                     </div>
                 </div>
