@@ -12,7 +12,7 @@ const Hero = () => {
 
     return (
         <div>
-            <div className='h-[30vh] xxxs:h-[33vh] xs:h-[40vh] sm:h-[50vh] lg:h-[80vh] w-full relative'>
+            <div className='h-[30vh] xxxs:h-[32vh] xs:h-[40vh] sm:h-[50vh] lg:h-[80vh] w-full relative'>
                 <Image
                     // src={isSmallScreen ? image2 : image}
                     src='/bn2.jpg'
@@ -41,7 +41,7 @@ const Hero = () => {
                                 {" "} Cleaning Needs
                         </h1>
                         <h1
-                            className='font-medium xxxs:font-semibold xs:font-bold text-lg xxs:text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl hidden xxxs:flex xs:hidden flex-col gap-1.5 xs:gap-2 leading-none my-5 md:my-4 lg:my-6'
+                            className='font-medium xxxs:font-semibold xs:font-bold text-lg xxs:text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl hidden xxxs:flex xs:hidden flex-col gap-2 leading-none my-5 md:my-4 lg:my-6'
                         >
                             <span>
                                 The Reliable Solution to all your
