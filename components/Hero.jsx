@@ -41,7 +41,7 @@ const Hero = () => {
                                 {" "} Cleaning Needs
                         </h1>
                         <h1
-                            className='font-medium xxxs:font-semibold xs:font-bold text-lg xxs:text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl hidden xxxs:flex xs:hidden flex-col gap-2 leading-none my-5 md:my-4 lg:my-6'
+                            className='font-medium xxxs:font-semibold xs:font-bold text-lg xxs:text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl hidden xxxs:flex xs:hidden flex-col gap-3 leading-none my-5 md:my-4 lg:my-6'
                         >
                             <span>
                                 The Reliable Solution to all your
@@ -81,7 +81,7 @@ const Hero = () => {
                         </Link> */}
                         <Link
                             href="#contact"
-                            className="group w-fit bg-yellow-500 text-white font-medium text-sm xs:text-base px-3 xxs:px-4 xs:px-5 sm:px-6 md:px-7 py-2 xxs:py-2.5 md:py-3 rounded-sm flex items-center justify-between gap-1 xs:gap-2
+                            className="group w-fit bg-yellow-500 text-white font-medium text-sm xxxs:text-base px-3 xxs:px-4 xs:px-5 sm:px-6 md:px-7 py-2 xxs:py-2.5 md:py-3 rounded-sm flex items-center justify-between gap-1 xs:gap-2
                                         outline-none shadow-lg hover:scale-105 hover:shadow-xl focus:scale-110 hover:bg-yellow-600 active:scale-105 transition-all"
                         >
                             <span className='hidden xxs:flex'>Explore</span> Our Services{" "}
