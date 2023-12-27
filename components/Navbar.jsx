@@ -66,7 +66,7 @@ const navigation = [
 
 
 const Navbar = () => {
-    const [open2, setOpen2] = useState(true);
+    const [open2, setOpen2] = useState(false);
     const [openSidebar, setOpenSidebar] = useState(false)
     const isSmallScreen = useMediaQuery({ maxWidth: 580 });
 
