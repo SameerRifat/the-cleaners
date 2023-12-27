@@ -81,7 +81,7 @@ const Hero = () => {
                         </Link> */}
                         <Link
                             href="#contact"
-                            className="group w-fit bg-yellow-500 text-white text-xs xxs:text-sm xs:text-base px-3 xxs:px-4 xs:px-5 sm:px-6 md:px-7 py-2 xxs:py-2.5 md:py-3 rounded-sm flex items-center justify-between gap-1 xs:gap-2
+                            className="group w-fit bg-yellow-500 text-white font-medium text-xs xxs:text-sm xs:text-base px-3 xxs:px-4 xs:px-5 sm:px-6 md:px-7 py-2 xxs:py-2.5 md:py-3 rounded-sm flex items-center justify-between gap-1 xs:gap-2
                                         outline-none shadow-lg hover:scale-105 hover:shadow-xl focus:scale-110 hover:bg-yellow-600 active:scale-105 transition-all"
                         >
                             <span className='hidden xxs:flex'>Explore</span> Our Services{" "}
