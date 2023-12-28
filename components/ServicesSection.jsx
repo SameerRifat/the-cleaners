@@ -61,7 +61,7 @@ const ServicesSection = () => {
                         <div className=' text-gray-100 text-xs xxxs:text-sm sm:text-base'>
                             Welcome to <span className='font-medium'>TheCleaners</span> Cleaning Services, your one-stop-shop for all your cleaning needs in UAE. Our team of highly skilled professionals offers a complete range of cleaning services for all types of properties, including apartments, houses, small businesses, and multi-floor commercial properties. We take pride in delivering high-quality cleaning services that leave your space sparkling clean and fresh.
                         </div>
-                        <div className='block sm:hidden lg:block mb-10'>
+                        <div className='block sm:hidden lg:block my-10 mb-14 sm:my-0'>
                             {/* <h4 className='text-base xxxs:text-lg font-medium sm:font-semibold text-white my-1'>
                                 Targeted Areas:
                             </h4> */}
