@@ -36,7 +36,7 @@ const ServicesSection = () => {
                                 </h3>
                             </div>
                             <h2 className='text-white font-semibold sm:font-bold md:font-extrabold text-xl xxxs:text-2xl xs:text-3xl sm:text-3xl md:text-4xl mt-1 xxxs:mt-2 md:mt-4'>
-                                Offering Best Cleaning Services in Dubai
+                                Offering Best Cleaning Services in UAE
                             </h2>
                             {/* <div className='mt-1 xs:mt-2'>
                                 <h4 className='text-base xxxs:text-lg font-medium sm:font-semibold text-white my-1'>
@@ -49,7 +49,7 @@ const ServicesSection = () => {
                                     </div>
                                     <div className='font-medium sm:font-semibold text-sm xxxs:text-lg  xxs:text-xl flex items-center gap-0.5 xxs:gap-1'>
                                         <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
-                                        <span>Dubai</span>
+                                        <span>UAE</span>
                                     </div>
                                     <div className='font-medium sm:font-semibold text-sm xxxs:text-lg  xxs:text-xl flex items-center gap-0.5 xxs:gap-1'>
                                         <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
@@ -59,7 +59,7 @@ const ServicesSection = () => {
                             </div> */}
                         </div>
                         <div className=' text-gray-100 text-xs xxxs:text-sm sm:text-base'>
-                            Welcome to <span className='font-medium'>TheCleaners</span> Cleaning Services, your one-stop-shop for all your cleaning needs in Dubai. Our team of highly skilled professionals offers a complete range of cleaning services for all types of properties, including apartments, houses, small businesses, and multi-floor commercial properties. We take pride in delivering high-quality cleaning services that leave your space sparkling clean and fresh.
+                            Welcome to <span className='font-medium'>TheCleaners</span> Cleaning Services, your one-stop-shop for all your cleaning needs in UAE. Our team of highly skilled professionals offers a complete range of cleaning services for all types of properties, including apartments, houses, small businesses, and multi-floor commercial properties. We take pride in delivering high-quality cleaning services that leave your space sparkling clean and fresh.
                         </div>
                         <div className='block sm:hidden lg:block'>
                             <h4 className='text-base xxxs:text-lg font-medium sm:font-semibold text-white my-1'>
@@ -72,7 +72,7 @@ const ServicesSection = () => {
                                 </div>
                                 <div className='font-medium sm:font-semibold text-sm xxxs:text-lg  flex items-center gap-0.5 xxs:gap-1 bg-blue-900/20 shadow-xl backdrop-blur-[10rem] p-1.5 xxxs:p-[6.2px] w-350:p-3 xxs:p-4 rounded-lg'>
                                     <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
-                                    <span>Dubai</span>
+                                    <span>UAE</span>
                                 </div>
                                 <div className='font-medium sm:font-semibold text-sm xxxs:text-lg  flex items-center gap-0.5 xxs:gap-1 bg-blue-900/20 shadow-xl backdrop-blur-[10rem] p-1.5 xxxs:p-[6.2px] w-350:p-3 xxs:p-4 rounded-lg'>
                                     <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
