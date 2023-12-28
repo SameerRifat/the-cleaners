@@ -61,21 +61,28 @@ const ServicesSection = () => {
                         <div className=' text-gray-100 text-xs xxxs:text-sm sm:text-base'>
                             Welcome to <span className='font-medium'>TheCleaners</span> Cleaning Services, your one-stop-shop for all your cleaning needs in UAE. Our team of highly skilled professionals offers a complete range of cleaning services for all types of properties, including apartments, houses, small businesses, and multi-floor commercial properties. We take pride in delivering high-quality cleaning services that leave your space sparkling clean and fresh.
                         </div>
-                        <div className='block sm:hidden lg:block'>
-                            <h4 className='text-base xxxs:text-lg font-medium sm:font-semibold text-white my-1'>
+                        <div className='block sm:hidden lg:block mb-10'>
+                            {/* <h4 className='text-base xxxs:text-lg font-medium sm:font-semibold text-white my-1'>
                                 Targeted Areas:
-                            </h4>
-                            <div className='flex items-center gap-2 xxs:gap-5 text-white flex-wrap'>
-                                <Image
-                                    src='/location6.png'
-                                    // src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-lg.png')}
-                                    alt="background image"
-                                    width={500}
-                                    height={500}
-                                    quality={95}
-                                    priority={true}
-                                    className='max-w-full w-64 xxs:w-80'
-                                />
+                            </h4> */}
+                            <div className='flex items-center gap-2 xxs:gap-5 text-white flex-wrap justify-center'>
+                                <div className='w-fit relative'>
+                                    <Image
+                                        src='/location6.png'
+                                        // src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-lg.png')}
+                                        alt="background image"
+                                        width={500}
+                                        height={500}
+                                        quality={95}
+                                        priority={true}
+                                        className='max-w-full w-64 xxs:w-80'
+                                    />
+                                    <div className='absolute -bottom-8 xs:-bottom-10 w-full text-center flex justify-center'>
+                                        <h4 className='text-xs xxxs:text-sm xs:text-base font-medium text-white my-1'>
+                                            Our Targeted Cities in UAE
+                                        </h4>
+                                    </div>
+                                </div>
                                 {/* <div className='mt-1 xxs:mt-2 font-medium sm:font-semibold text-sm xxxs:text-lg  flex items-center gap-0.5 xxs:gap-1 bg-blue-900/20 shadow-xl backdrop-blur-[10rem] p-1.5 xxxs:p-[6.2px] w-350:p-3 xxs:p-4 rounded-lg'>
                                     <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
                                     <span>Sharjah</span>
