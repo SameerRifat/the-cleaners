@@ -15,7 +15,7 @@ const ServicesSection = () => {
 
     return (
         <section>
-            <div className='relative w-full h-[700px] sm:h-[600px] z-10'>
+            <div className='relative w-full h-[800px] sm:h-[600px] z-10'>
                 <Image
                     // src='/wave-lg.png'
                     src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-lg.png')}
@@ -66,7 +66,17 @@ const ServicesSection = () => {
                                 Targeted Areas:
                             </h4>
                             <div className='flex items-center gap-2 xxs:gap-5 text-white flex-wrap'>
-                                <div className='mt-1 xxs:mt-2 font-medium sm:font-semibold text-sm xxxs:text-lg  flex items-center gap-0.5 xxs:gap-1 bg-blue-900/20 shadow-xl backdrop-blur-[10rem] p-1.5 xxxs:p-[6.2px] w-350:p-3 xxs:p-4 rounded-lg'>
+                                <Image
+                                    src='/location6.png'
+                                    // src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-lg.png')}
+                                    alt="background image"
+                                    width={500}
+                                    height={500}
+                                    quality={95}
+                                    priority={true}
+                                    className='max-w-full w-64 xxs:w-80'
+                                />
+                                {/* <div className='mt-1 xxs:mt-2 font-medium sm:font-semibold text-sm xxxs:text-lg  flex items-center gap-0.5 xxs:gap-1 bg-blue-900/20 shadow-xl backdrop-blur-[10rem] p-1.5 xxxs:p-[6.2px] w-350:p-3 xxs:p-4 rounded-lg'>
                                     <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
                                     <span>Sharjah</span>
                                 </div>
@@ -77,7 +87,7 @@ const ServicesSection = () => {
                                 <div className='font-medium sm:font-semibold text-sm xxxs:text-lg  flex items-center gap-0.5 xxs:gap-1 bg-blue-900/20 shadow-xl backdrop-blur-[10rem] p-1.5 xxxs:p-[6.2px] w-350:p-3 xxs:p-4 rounded-lg'>
                                     <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
                                     <span>Ajman</span>
-                                </div>
+                                </div> */}
                             </div>
                             {/* <div className='bg-blue-500 flex justify-center items-center p-2 xs:p-4 rounded-full'>
                                 <PhoneIcon fontSize={isSmallScreen ? 'medium' : 'large'}

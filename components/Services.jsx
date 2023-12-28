@@ -8,23 +8,44 @@ import { useMediaQuery } from 'react-responsive';
 
 const services = [
     {
-        imgSrc: '/service1.jpg',
+        imgSrc: '/mattress1.jpg',
         title: 'Mattress Cleaning',
         rate: 25
     },
     {
-        imgSrc: '/service1.jpg',
+        imgSrc: '/carpet1.jpg',
         title: 'Carpet Cleaning',
         rate: 25
     },
     {
-        imgSrc: '/service1.jpg',
+        imgSrc: '/rugs1.jpg',
         title: 'Rugs Cleaning',
         rate: 25
     },
     {
-        imgSrc: '/service1.jpg',
+        imgSrc: '/curtains1.jpg',
         title: 'Curtains Cleaning',
+        rate: 25
+    },
+    {
+        imgSrc: '/houseMaid2.jpg',
+        title: 'House Maid',
+        rate: 25
+    },
+    {
+        imgSrc: '/deep1.jpg',
+        title: 'Deep Cleaning',
+        rate: 25
+    },
+    {
+        imgSrc: '/glass1.jpg',
+        title: 'Glass Cleaning',
+        rate: 25
+    },
+    
+    {
+        imgSrc: '/housCleaning1.jpg',
+        title: 'House Cleaning',
         rate: 25
     },
 ]
@@ -34,13 +55,13 @@ const Services = () => {
 
     return (
         <section className='shared_container pb-20'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10'>
                 {services.map((service, index) => {
                     return (
                         <Link
                             key={service.title}
                             href={`/services/${encodeURIComponent(service.title.replace(/\s+/g, '-'))}`}
-                            className='rounded-md border border-white bg-white group hover:-translate-y-2 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl outline-none'
+                            className='rounded-lg border border-white bg-white group hover:-translate-y-2 hover:translate-x-0 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl outline-none'
                         >
                             <Image
                                 key={service.title}
@@ -50,7 +71,7 @@ const Services = () => {
                                 height={350}
                                 quality={95}
                                 priority={true}
-                                className='max-w-full w-full h-[170px] xxxs:h-[250px] xxs:h-[270px] rounded-tl-md rounded-tr-md'
+                                className='max-w-full w-full h-[170px] xxxs:h-[250px] xxs:h-[260px] rounded-tl-lg rounded-tr-lg'
                             />
                             <div className=' flex items-center justify-between py-4 px-2 xxxs:p-4'>
                                 <div className=' h-fit'>
