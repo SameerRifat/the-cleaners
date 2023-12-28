@@ -10,22 +10,22 @@ const services = [
     {
         imgSrc: '/service1.jpg',
         title: 'Mattress Cleaning',
-        rate: 350
+        rate: 25
     },
     {
         imgSrc: '/service1.jpg',
         title: 'Carpet Cleaning',
-        rate: 350
+        rate: 25
     },
     {
         imgSrc: '/service1.jpg',
         title: 'Rugs Cleaning',
-        rate: 350
+        rate: 25
     },
     {
         imgSrc: '/service1.jpg',
         title: 'Curtains Cleaning',
-        rate: 350
+        rate: 25
     },
 ]
 
@@ -58,7 +58,7 @@ const Services = () => {
                                         {service.title}
                                     </h2>
                                     <p className='text-sm xxxs:text-base'>
-                                        Starting from <span className='font-medium xxxs:font-semibold'>AED {service.rate}</span>
+                                        Starting from <span className='font-medium xxxs:font-semibold'>AED {service.rate}/hr</span>
                                     </p>
                                 </div>
                                 <span className='border border-black/5 p-1.5 xxxs:p-2 w-9 h-9 xxxs:h-auto xxxs:w-auto flex justify-center items-center rounded-full text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300'>

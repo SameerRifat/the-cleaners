@@ -41,7 +41,7 @@ const Hero = () => {
                                 {" "} Cleaning Needs
                         </h1>
                         <h1
-                            className='font-medium xxxs:font-semibold xs:font-bold text-lg xxs:text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl hidden xxxs:flex xs:hidden flex-col gap-3 leading-none my-5 md:my-4 lg:my-6'
+                            className='font-medium xxxs:font-semibold xs:font-bold text-lg xxs:text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl hidden xxxs:flex xs:hidden flex-col gap-3 xxs:gap-1 leading-none my-5 xxs:my-3'
                         >
                             <span>
                                 The Reliable Solution to all your

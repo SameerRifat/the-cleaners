@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       screens: {
         'xxxs': '300px',
+        'w-350': '350px',
         'xxs': '450px',
         'xs': '580px',
         'xxl': '1700px'
