@@ -11,6 +11,6 @@ html, body {
 }
 
 .shared_container{
-  @apply w-[94%] xxs:w-[90%] mx-auto max-w-[1600px]
+  @apply w-[93%] xxs:w-[90%] mx-auto max-w-[1600px]
 }
 

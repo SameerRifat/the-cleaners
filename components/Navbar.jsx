@@ -77,7 +77,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white border-b border-gray-100 shadow-md">
+        <nav className="bg-white border-b border-gray-100 shadow-2xl z-[9999]">
             <div className="shared_container flex justify-between items-center h-[50px] xxs:h-[60px] sm:h-[70px] ">
                 <div className="">
                     <Link href='/'>
@@ -109,7 +109,7 @@ const Navbar = () => {
                                                     position: 'absolute',
                                                     left: '0',
                                                     right: '0',
-                                                    top: '116px',
+                                                    top: '115px',
                                                     width: '400px',
                                                     margin: '0 auto',
                                                     borderRadius: '10px',

@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xxxs': '350px',
+        'xxxs': '300px',
         'xxs': '450px',
         'xs': '580px',
         'xxl': '1700px'
@@ -18,6 +18,11 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'theme-yellow-400': '#ffb01a',
+        'theme-yellow-500': '#FFA700',
+        'theme-yellow-600': '#e69600',
+      }
     },
   },
   plugins: [],
