@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'w-220': '220px',
         'xxxs': '300px',
         'w-350': '350px',
         'xxs': '450px',
@@ -23,6 +24,8 @@ module.exports = {
         'theme-yellow-400': '#ffb01a',
         'theme-yellow-500': '#FFA700',
         'theme-yellow-600': '#e69600',
+
+        'theme-blue': '#036DB3',
       }
     },
   },

@@ -54,7 +54,7 @@ const Services = () => {
     const xxs = useMediaQuery({ maxWidth: 350 });
 
     return (
-        <section className='shared_container pb-20'>
+        <section className='shared_container'>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10'>
                 {services.map((service, index) => {
                     return (

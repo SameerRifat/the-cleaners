@@ -15,7 +15,7 @@ const ServicesSection = () => {
 
     return (
         <section>
-            <div className='relative w-full h-[800px] sm:h-[600px] z-10'>
+            <div className='relative w-full h-[800px] sm:h-[600px]'>
                 <Image
                     // src='/wave-lg.png'
                     src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-lg.png')}
@@ -24,9 +24,9 @@ const ServicesSection = () => {
                     height={1000}
                     quality={95}
                     priority={true}
-                    className='absolute top-0 left-0 max-w-full w-full h-full -z-50'
+                    className='absolute top-0 left-0 max-w-full w-full h-full -z-[9999]'
                 />
-                <div className='absolute top-0 left-0 w-full h-full z-20'>
+                <div className='absolute top-0 left-0 w-full h-full'>
                     <div className='shared_container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xxxs:gap-5 xs:gap-6 md:gap-10 mt-4 xxxs:mt-8 xs:mt-12 mb-7 xs:mb-8 sm:mb-10'>
                         <div className=''>
                             <div className='flex items-center gap-1 xs:gap-3'>
@@ -111,10 +111,10 @@ const ServicesSection = () => {
                             </div> */}
                         </div>
                     </div>
-                    <div className=''>
-                        <Services />
-                    </div>
                 </div>
+            </div>
+            <div className='pb-20 -mt-64 xxxs:-mt-52 xxs:-mt-60 xs:-mt-64 z-50'>
+                <Services />
             </div>
         </section>
     )
