@@ -12,9 +12,9 @@ const SectionHeading = ({ lineOne, lineTwo, subtitle, text = false }) => {
             </div>
             <div className=' flex justify-center mt-3 xxs:mt-7 mb-16'>
                 <h2 className={`${text ? 'text-white' : 'text-gray-800'} xxxs:font-bold w-350:font-extrabold text-xl xxxs:text-2xl w-350:text-3xl xs:text-4xl flex flex-col items-center justify-center gap-2`}>
-                    <span className='hidden xxxs:block'>{lineOne}</span>
-                    <span className='hidden xxxs:block'>{lineTwo}</span>
-                    <span className='block xxxs:hidden text-center'>{lineOne} {" "} {lineTwo}</span>
+                    <span className='hidden xs:block'>{lineOne}</span>
+                    <span className='hidden xs:block'>{lineTwo}</span>
+                    <span className='block xs:hidden text-center'>{lineOne} {" "} {lineTwo}</span>
                 </h2>
             </div>
         </>

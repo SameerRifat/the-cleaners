@@ -23,7 +23,7 @@ const GetInTouch = () => {
                         priority={true}
                         className='max-w-full w-full h-full'
                     />
-                    <div className='absolute top-0 left-0 w-full h-full bg-blue-500/40 py-14'>
+                    <div className='absolute top-0 left-0 w-full h-full bg-blue-500/45 py-14'>
                         <SectionHeading
                             lineOne="Be a Part of Hundreds"
                             lineTwo="of Happy Families"
