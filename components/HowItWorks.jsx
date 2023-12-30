@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import SectionHeading from './SectionHeading'
 
 const steps = [
     {
@@ -26,7 +27,7 @@ const steps = [
 
 const HowItWorks = () => {
     return (
-        <section className='mb-72 sm:mb-40 bg-white py-14 bg-gradient-to-r from-blue-300 to-green-300'>
+        <section className=' bg-white py-14 bg-gradient-to-r from-blue-300 to-green-300'>
             {/* <Image
                 src="/glassBanner1.jpg"
                 alt="service image"
@@ -41,26 +42,16 @@ const HowItWorks = () => {
             >
             </div> */}
             <div className='flex justify-center items-center'>
-                <div className='shared_container h-fit my-auto'>
-                    <div className=' flex items-center justify-center'>
-                        <div className='flex items-center gap-3'>
-                            <div className='bg-green-900 w-5 xxxs:w-14 h-0.5 rounded-full'></div>
-                            <h3 className='text-gray-800 font-semibold uppercase text-xs xxxs:text-sm w-350:text-base'>How it works</h3>
-                            <div className='bg-green-900 w-5 xxxs:w-14 h-0.5 rounded-full'></div>
-                        </div>
-                    </div>
-                    <div className=' flex justify-center mt-3 xxs:mt-7 mb-16'>
-                        <h2 className='text-gray-800 xxxs:font-bold w-350:font-extrabold text-xl xxxs:text-2xl w-350:text-3xl xs:text-4xl flex flex-col items-center justify-center gap-2'>
-                            <span className='hidden xxxs:block'>Get amazing Cleaning</span>
-                            <span className='hidden xxxs:block'>in 4 simple steps</span>
-                            <span className='block xxxs:hidden text-center'>Get amazing Cleaning in 4 simple steps</span>
-                        </h2>
-                    </div>
-                    {/* #f9fafb */}
+                <div className='shared_container'>
+                    <SectionHeading
+                        lineOne="Get amazing Cleaning"
+                        lineTwo="in 4 simple steps"
+                        subtitle="How it works"
+                    />
                     <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-16'>
                         {steps.map((item, ind) => {
                             return (
-                                <div className='h-fit sm:h-60 bg-gradient-to-r from-blue-400 to-green-400 shadow-lg rounded-md px-3 py-5 xxxs:p-5 relative'>
+                                <div className='h-fit sm:h-60 bg-gradient-to-tr from-blue-400 to-green-400 shadow-lg rounded-md px-3 py-5 xxxs:p-5 relative'>
                                     <div className='bg-gradient-to-br from-green-500 to-blue-500 shadow-lg absolute left-[10%] top-0 -translate-y-1/2  p-4 rounded-full flex justify-center items-center'>
                                         <Image
                                             src={item.iconImage}

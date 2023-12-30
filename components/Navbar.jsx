@@ -59,32 +59,32 @@ const navigation = [
                 href: '/services/Washroom-Cleaning',
             },
             {
-                id: 8,
+                id: 9,
                 title: 'Floor Cleaning',
                 href: '/services/Floor-Cleaning',
             },
             {
-                id: 8,
+                id: 10,
                 title: 'House Maid Services',
                 href: '/services/House-Maid-Services',
             },
             {
-                id: 8,
+                id: 11,
                 title: 'Deep Cleaning',
                 href: '/services/Deep-Cleaning',
             },
             {
-                id: 8,
+                id: 12,
                 title: 'House Cleaning',
                 href: '/services/House-Cleaning',
             },
             {
-                id: 8,
+                id: 13,
                 title: 'Ironing and Washing Clothes',
                 href: '/services/Ironing-and-Washing-Clothes',
             },
             {
-                id: 8,
+                id: 14,
                 title: 'Office Cleaning',
                 href: '/services/Office-Cleaning',
             },
