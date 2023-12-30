@@ -18,7 +18,7 @@ const services = [
         rate: 25
     },
     {
-        imgSrc: '/villa.jpg',
+        imgSrc: '/villa2.jpg',
         title: 'Villa Cleaning',
         rate: 25
     },
