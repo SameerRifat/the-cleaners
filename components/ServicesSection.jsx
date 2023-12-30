@@ -11,14 +11,14 @@ import Services from './Services';
 const ServicesSection = () => {
     const xxs = useMediaQuery({ maxWidth: 350 });
     const xs = useMediaQuery({ maxWidth: 580 });
-    const md = useMediaQuery({ maxWidth: 640 });
+    const md = useMediaQuery({ maxWidth: 768 });
     const isSmallScreen = useMediaQuery({ maxWidth: 700 });
 
     return (
         <section>
             <div className='relative w-full h-[800px] sm:h-[700px]'>
                 <Image
-                    src={md ? '/wave-new3.png' : '/wave-new.png'}
+                    src={md ? '/wave-new4.png' : '/wave-new.png'}
                     // src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-new.png')}
                     alt="background image"
                     width={1200}
