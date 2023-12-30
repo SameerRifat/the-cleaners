@@ -11,14 +11,15 @@ import Services from './Services';
 const ServicesSection = () => {
     const xxs = useMediaQuery({ maxWidth: 350 });
     const xs = useMediaQuery({ maxWidth: 580 });
+    const md = useMediaQuery({ maxWidth: 640 });
     const isSmallScreen = useMediaQuery({ maxWidth: 700 });
 
     return (
         <section>
-            <div className='relative w-full h-[800px] sm:h-[600px]'>
+            <div className='relative w-full h-[800px] sm:h-[700px]'>
                 <Image
-                    // src='/wave-lg.png'
-                    src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-lg.png')}
+                    src={md ? '/wave-new3.png' : '/wave-new.png'}
+                    // src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-new.png')}
                     alt="background image"
                     width={1200}
                     height={1000}
@@ -27,7 +28,7 @@ const ServicesSection = () => {
                     className='absolute top-0 left-0 max-w-full w-full h-full -z-[9999]'
                 />
                 <div className='absolute top-0 left-0 w-full h-full'>
-                    <div className='shared_container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xxxs:gap-5 xs:gap-6 md:gap-10 mt-4 xxxs:mt-8 xs:mt-12 mb-7 xs:mb-8 sm:mb-10'>
+                    <div className='shared_container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xxxs:gap-5 xs:gap-6 md:gap-10 mt-4 xxxs:mt-8 xs:mt-14 mb-7 xs:mb-8 sm:mb-10'>
                         <div className=''>
                             <div className='flex items-center gap-1 xs:gap-3'>
                                 <span className='w-8 xs:w-14 sm:w-16 h-[1px] sm:h-0.5 rounded-full bg-white'></span>
@@ -113,7 +114,7 @@ const ServicesSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='pb-40 -mt-64 xxxs:-mt-56 xxs:-mt-60 xs:-mt-64 z-50'>
+            <div className='pb-40 -mt-64 xxxs:-mt-52 xxs:-mt-60 xs:-mt-64 sm:-mt-80 md:-mt-[350px] z-50'>
                 <Services />
             </div>
         </section>

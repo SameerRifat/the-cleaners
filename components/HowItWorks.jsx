@@ -79,6 +79,24 @@ const HowItWorks = () => {
                                         {item.desc}
                                     </p>
                                 </div>
+                                // <div className='h-fit sm:h-60 bg-green-700 bg-opacity-85 shadow-lg rounded-md px-3 py-5 xxxs:p-5 relative'>
+                                //     <div className='bg-green-500 absolute left-[10%] top-0 -translate-y-1/2  p-4 rounded-full flex justify-center items-center'>
+                                //         <Image
+                                //             src={item.iconImage}
+                                //             alt="icon"
+                                //             width={40}
+                                //             height={40}
+                                //             quality={95}
+                                //             priority={true}
+                                //             className='max-w-full w-6 xxxs:w-9 xxs:w-10 h-6 xxxs:h-9 xxs:h-10'
+                                //         />
+                                //     </div>
+                                //     <h3 className='text-white font-semibold xxxs:font-bold text-base xxxs:text-lg mt-7 xxxs:mt-10 capitalize'>{item.title}</h3>
+                                //     <div className='bg-green-500 h-[3px] w-8 my-4'></div>
+                                //     <p className='text-gray-200 text-xs xxxs:text-sm'>
+                                //         {item.desc}
+                                //     </p>
+                                // </div>
                             )
                         })}
                     </div>
