@@ -14,3 +14,13 @@ html, body {
   @apply w-[93%] xxs:w-[90%] mx-auto max-w-[1600px]
 }
 
+
+.bg_gradient{
+  @apply bg-gradient-to-r from-blue-500 to-green-500
+}
+.hover_bg_gradient{
+  @apply  hover:from-blue-600 hover:to-green-600 transition-all
+}
+.hover_text_gradient{
+  @apply hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all
+}

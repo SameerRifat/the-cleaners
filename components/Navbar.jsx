@@ -81,7 +81,7 @@ const Navbar = () => {
             <div className="shared_container flex justify-between items-center h-[50px] xxs:h-[60px] sm:h-[70px] ">
                 <div className="">
                     <Link href='/'>
-                        <Image src="/logo1.png" alt="Logo" width={150} height={100} className='max-w-full w-[80px] xxs:w-28 sm:w-32 h-auto' />
+                        <Image src="/logo3.png" alt="Logo" width={150} height={100} className='max-w-full w-[80px] xxs:w-28 sm:w-32 h-auto' />
                         {/* <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2> */}
                     </Link>
                 </div>
@@ -95,11 +95,11 @@ const Navbar = () => {
                                             href={navLink.href}
                                             onMouseEnter={() => setOpen2(true)}
                                             onMouseLeave={() => setOpen2(false)}
-                                            className="font-extrabold py-0.5 pb-[26px] relative group text-gray-600 transition-all hover:text-blue-500"
+                                            className="font-extrabold py-0.5 pb-[26px] relative group text-gray-600 hover_text_gradient group"
                                         >
                                             Services
-                                            <span className="underline absolute bottom-[20px] left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
-                                            <KeyboardArrowDownIcon />
+                                            <span className="underline absolute bottom-[20px] left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg_gradient transition-all group-hover:w-full"></span>
+                                            <KeyboardArrowDownIcon className='group-hover:text-green-500'/>
                                         </Link>
                                         {open2 && (
                                             <Paper
@@ -125,9 +125,9 @@ const Navbar = () => {
                                                             <Link
                                                                 key={child.id}
                                                                 href={child.href}
-                                                                className='text-gray-700 text-sm flex items-center hover:text-blue-500'
+                                                                className='text-gray-700 text-sm flex items-center hover_text_gradient group'
                                                             >
-                                                                <ArrowRightIcon />
+                                                                <ArrowRightIcon className='group-hover:text-blue-500'/>
                                                                 {child.title}
                                                             </Link>
                                                             // </div>
@@ -143,10 +143,10 @@ const Navbar = () => {
                                     <Link
                                         key={navLink.name}
                                         href={navLink.href}
-                                        className='text-gray-600 py-0.5 font-semibold hover:text-blue-500 transition-all duration-500 relative group'
+                                        className='text-gray-600 py-0.5 font-semibold hover_text_gradient duration-500 relative group'
                                     >
                                         {navLink.name}
-                                        <span className="underline absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+                                        <span className="underline absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg_gradient transition-all group-hover:w-full"></span>
                                     </Link>
                                 )
                             }
@@ -157,7 +157,8 @@ const Navbar = () => {
                 <div className="hidden md:flex">
                     <Link href={`https://wa.me/${971557924200}`}
                         rel="noopener noreferrer"
-                        className="px-3 py-2.5 font-semibold border border-transparent bg-blue-500 text-white rounded-md shadow-md hover:bg-white hover:text-blue-500 hover:border hover:border-blue-500 transition-all outline-none hover:shadow-lg hover:scale-[1.03] inline-block"
+                        className='bg_gradient px-3 py-2.5 font-semibold text-white rounded-md hover_bg_gradient shadow-lg hover:shadow-xl inline-block hover:scale-105'
+                        // className="px-3 py-2.5 font-semibold border border-transparent bg-blue-500 text-white rounded-md shadow-md hover:bg-white hover:text-blue-500 hover:border hover:border-blue-500 transition-all outline-none hover:shadow-lg hover:scale-[1.03] inline-block"
                     >
                         Conact Now
                     </Link>
@@ -183,7 +184,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between">
                     <div className='flex items-start justify-start w-20'>
                         {/* <Link href='/' className=' w-full h-full relative'> */}
-                        <Image src="/logo1.png" alt="Logo" quality={95} priority={true} width={150} height={100} className='max-w-full w-full h-auto' />
+                        <Image src="/logo3.png" alt="Logo" quality={95} priority={true} width={150} height={100} className='max-w-full w-full h-auto' />
                         {/* <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2> */}
                         {/* </Link> */}
                     </div>
@@ -204,11 +205,11 @@ const Navbar = () => {
                             if (navLink.children) {
                                 return (
                                     <>
-                                        <div className="flex w-full items-center justify-between rounded-md hover:bg-gray-50 hover:text-blue-500 px-2 py-3"
+                                        <div className="flex w-full items-center justify-between rounded-md hover:bg-gray-50 px-2 py-3"
                                         >
                                             <Link
                                                 href={navLink.href}
-                                                className="font-semibold"
+                                                className="font-semibold hover_text_gradient"
                                             >
                                                 Services
                                             </Link>
@@ -227,7 +228,7 @@ const Navbar = () => {
                                                         // <div key={child.id} className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover:text-blue-500 w-full h-full">
                                                         <Link
                                                             href={child.href}
-                                                            className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover:text-blue-500 w-full h-full rounded-md"
+                                                            className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover_text_gradient w-full h-full rounded-md"
                                                         >
                                                             {child.title}
                                                         </Link>
@@ -243,7 +244,7 @@ const Navbar = () => {
                                     <Link key={navLink.name}
                                         href={navLink.href}
                                         onClick={() => setOpen(false)}
-                                        className='text-black px-2 py-3 font-semibold w-full rounded-md hover:bg-gray-50 hover:text-blue-500'
+                                        className='text-black px-2 py-3 font-semibold w-full rounded-md hover:bg-gray-50 hover_text_gradient'
                                     >
                                         {navLink.name}
                                     </Link>

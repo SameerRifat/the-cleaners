@@ -68,7 +68,7 @@ const ServicesSection = () => {
                             <div className='flex items-center gap-2 xxs:gap-5 text-white flex-wrap justify-center'>
                                 <div className='w-fit relative'>
                                     <Image
-                                        src='/location6.png'
+                                        src='/location7.png'
                                         // src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-lg.png')}
                                         alt="background image"
                                         width={500}
@@ -113,7 +113,7 @@ const ServicesSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='pb-20 -mt-64 xxxs:-mt-56 xxs:-mt-60 xs:-mt-64 z-50'>
+            <div className='pb-40 -mt-64 xxxs:-mt-56 xxs:-mt-60 xs:-mt-64 z-50'>
                 <Services />
             </div>
         </section>
