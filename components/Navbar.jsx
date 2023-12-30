@@ -20,8 +20,8 @@ const navigation = [
         children: [
             {
                 id: 1,
-                title: 'Carpet Cleaning',
-                href: '/services/Carpet-Cleaning',
+                title: 'Mattress Cleaning',
+                href: '/services/Mattress-Cleaning',
             },
             {
                 id: 2,
@@ -30,33 +30,63 @@ const navigation = [
             },
             {
                 id: 3,
-                title: 'Curtains Cleaning',
-                href: '/services/Curtains-Cleaning',
+                title: 'Villa Cleaning',
+                href: '/services/Villa-Cleaning',
             },
             {
                 id: 4,
-                title: 'Deep Cleaning',
-                href: '/services/Deep-Cleaning',
+                title: 'Appartment Cleaning',
+                href: '/services/Appartment-Cleaning',
             },
             {
                 id: 5,
-                title: 'Glass Cleaning',
-                href: '/services/Glass-Cleaning',
+                title: 'Balcony Cleaning',
+                href: '/services/Balcony-Cleaning',
             },
             {
                 id: 6,
-                title: 'House Maid',
-                href: '/services/House-Maid',
+                title: 'Appliance Cleaning',
+                href: '/services/Appliance-Cleaning',
             },
             {
                 id: 7,
-                title: 'Mattress Cleaning',
-                href: '/services/Mattress-Cleaning',
+                title: 'Kitchen Cleaning',
+                href: '/services/Kitchen-Cleaning',
+            },
+            {
+                id: 8,
+                title: 'Washroom Cleaning',
+                href: '/services/Washroom-Cleaning',
+            },
+            {
+                id: 8,
+                title: 'Floor Cleaning',
+                href: '/services/Floor-Cleaning',
+            },
+            {
+                id: 8,
+                title: 'House Maid Services',
+                href: '/services/House-Maid-Services',
+            },
+            {
+                id: 8,
+                title: 'Deep Cleaning',
+                href: '/services/Deep-Cleaning',
             },
             {
                 id: 8,
                 title: 'House Cleaning',
                 href: '/services/House-Cleaning',
+            },
+            {
+                id: 8,
+                title: 'Ironing and Washing Clothes',
+                href: '/services/Ironing-and-Washing-Clothes',
+            },
+            {
+                id: 8,
+                title: 'Office Cleaning',
+                href: '/services/Office-Cleaning',
             },
         ],
     },

@@ -13,23 +13,48 @@ const services = [
         rate: 25
     },
     {
-        imgSrc: '/carpet1.jpg',
-        title: 'Carpet Cleaning',
+        imgSrc: '/rugs3.jpg',
+        title: 'Carpet/Rugs Cleaning',
         rate: 25
     },
     {
-        imgSrc: '/rugs1.jpg',
-        title: 'Rugs Cleaning',
+        imgSrc: '/villa.jpg',
+        title: 'Villa Cleaning',
         rate: 25
     },
     {
-        imgSrc: '/curtains1.jpg',
-        title: 'Curtains Cleaning',
+        imgSrc: '/appartment.jpg',
+        title: 'Appartment Cleaning',
+        rate: 25
+    },
+    {
+        imgSrc: '/balcony1.jpg',
+        title: 'Balcony Cleaning',
+        rate: 25
+    },
+    {
+        imgSrc: '/appliance1.jpg',
+        title: 'Appliance Cleaning',
+        rate: 25
+    },
+    {
+        imgSrc: '/kitchen1.jpg',
+        title: 'Kitchen Cleaning',
+        rate: 25
+    },
+    {
+        imgSrc: '/washroom1.jpg',
+        title: 'Washroom Cleaning',
+        rate: 25
+    },
+    {
+        imgSrc: '/floor1.jpg',
+        title: 'Floor Cleaning',
         rate: 25
     },
     {
         imgSrc: '/houseMaid2.jpg',
-        title: 'House Maid',
+        title: 'House Maid Services',
         rate: 25
     },
     {
@@ -37,15 +62,20 @@ const services = [
         title: 'Deep Cleaning',
         rate: 25
     },
-    {
-        imgSrc: '/glass1.jpg',
-        title: 'Glass Cleaning',
-        rate: 25
-    },
     
     {
         imgSrc: '/housCleaning1.jpg',
         title: 'House Cleaning',
+        rate: 25
+    },
+    {
+        imgSrc: '/ironing1.jpg',
+        title: 'Ironing and Washing Clothes',
+        rate: 25
+    },
+    {
+        imgSrc: '/office.jpg',
+        title: 'Office Cleaning',
         rate: 25
     },
 ]
@@ -75,7 +105,7 @@ const Services = () => {
                                     className='max-w-full w-full h-[170px] xxxs:h-[250px] xxs:h-[280px] rounded-md group-hover:scale-110 transition-all duration-1000 group-hover:rounded-3xl'
                                 />
                             </div>
-                            <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/3 bg-white group-hover:bg-green-700 w-[90%] flex items-center justify-between py-4 px-2 xxxs:p-4 transition-all duration-500 rounded-md shadow-lg group-hover:shadow-xl'>
+                            <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/3 bg-white group-hover:bg-gradient-to-br group-hover:from-blue-500 group-hover:to-green-500 w-[90%] flex items-center justify-between py-4 px-2 xxxs:p-4 transition-all duration-500 rounded-md shadow-lg group-hover:shadow-xl'>
                                 <div className='h-fit'>
                                     <p className='text-green-700 group-hover:text-gray-100 duration-300'>Residential Service</p>
                                     <h2 className='text-base xxxs:text-lg font-medium xxxs:font-semibold text-green-700 mb-2 group-hover:text-white transition-all duration-300'>
