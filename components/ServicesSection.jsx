@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PhoneIcon from '@mui/icons-material/Phone';
 import PlaceIcon from '@mui/icons-material/Place';
 import Link from 'next/link';
@@ -14,6 +14,11 @@ const ServicesSection = () => {
     const md = useMediaQuery({ maxWidth: 768 });
     const isSmallScreen = useMediaQuery({ maxWidth: 700 });
 
+    const [forceRerender, setForceRerender] = useState(false);
+    useEffect(() => {
+        setForceRerender(prevState => !prevState);
+    }, [md]);
+
     return (
         <section>
             <div className='relative w-full h-[800px] sm:h-[700px]'>
@@ -25,6 +30,7 @@ const ServicesSection = () => {
                     height={1000}
                     quality={95}
                     priority={true}
+                    key={forceRerender}
                     className='absolute top-0 left-0 max-w-full w-full h-full -z-[9999]'
                 />
                 <div className='absolute top-0 left-0 w-full h-full'>
