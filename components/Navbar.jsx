@@ -129,7 +129,7 @@ const Navbar = () => {
                                         >
                                             Services
                                             <span className="underline absolute bottom-[20px] left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg_gradient transition-all group-hover:w-full"></span>
-                                            <KeyboardArrowDownIcon className='group-hover:text-green-500'/>
+                                            <KeyboardArrowDownIcon className='group-hover:text-green-500' />
                                         </Link>
                                         {open2 && (
                                             <Paper
@@ -157,7 +157,7 @@ const Navbar = () => {
                                                                 href={child.href}
                                                                 className='text-gray-700 text-sm flex items-center hover_text_gradient group'
                                                             >
-                                                                <ArrowRightIcon className='group-hover:text-blue-500'/>
+                                                                <ArrowRightIcon className='group-hover:text-blue-500' />
                                                                 {child.title}
                                                             </Link>
                                                             // </div>
@@ -188,13 +188,13 @@ const Navbar = () => {
                     <Link href={`https://wa.me/${971557924200}`}
                         rel="noopener noreferrer"
                         className='bg_gradient px-3 py-2.5 font-semibold text-white rounded-md hover_bg_gradient shadow-lg hover:shadow-xl inline-block hover:scale-105'
-                        // className="px-3 py-2.5 font-semibold border border-transparent bg-blue-500 text-white rounded-md shadow-md hover:bg-white hover:text-blue-500 hover:border hover:border-blue-500 transition-all outline-none hover:shadow-lg hover:scale-[1.03] inline-block"
+                    // className="px-3 py-2.5 font-semibold border border-transparent bg-blue-500 text-white rounded-md shadow-md hover:bg-white hover:text-blue-500 hover:border hover:border-blue-500 transition-all outline-none hover:shadow-lg hover:scale-[1.03] inline-block"
                     >
                         Conact Now
                     </Link>
                 </div>
                 <button onClick={() => setOpenSidebar(true)} className='md:hidden text-gray-800'>
-                    <MenuOutlinedIcon fontSize={isSmallScreen ? 'small' : 'medium'}/>
+                    <MenuOutlinedIcon fontSize={isSmallScreen ? 'small' : 'medium'} />
                 </button>
             </div>
             <Drawer
@@ -258,6 +258,7 @@ const Navbar = () => {
                                                         // <div key={child.id} className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover:text-blue-500 w-full h-full">
                                                         <Link
                                                             href={child.href}
+                                                            onClick={() => setOpenSidebar(false)}
                                                             className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover_text_gradient w-full h-full rounded-md"
                                                         >
                                                             {child.title}
@@ -273,8 +274,8 @@ const Navbar = () => {
                                 return (
                                     <Link key={navLink.name}
                                         href={navLink.href}
-                                        onClick={() => setOpen(false)}
-                                        className='text-black px-2 py-3 font-semibold w-full rounded-md hover:bg-gray-50 hover_text_gradient'
+                                        onClick={() => setOpenSidebar(false)}
+                                        className='text-black px-2 py-3 font-semibold w-full rounded-md hover:bg-gray-100 hover_text_gradient'
                                     >
                                         {navLink.name}
                                     </Link>

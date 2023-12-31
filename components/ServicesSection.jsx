@@ -21,7 +21,7 @@ const ServicesSection = () => {
 
     return (
         <section>
-            <div className='relative w-full h-[800px] sm:h-[700px]'>
+            <div className='relative w-full h-[550px] xxxs:h-[600px] sm:h-[700px]'>
                 <Image
                     src={md ? '/wave-new4.png' : '/wave-new.png'}
                     // src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-new.png')}
@@ -43,7 +43,7 @@ const ServicesSection = () => {
                                 </h3>
                             </div>
                             <h2 className='text-white font-semibold sm:font-bold md:font-extrabold text-xl xxxs:text-2xl xs:text-3xl sm:text-3xl md:text-4xl mt-1 xxxs:mt-2 md:mt-4'>
-                                Offering Best Cleaning Services in UAE
+                                Offering Best Cleaning Services in Sharjah
                             </h2>
                             {/* <div className='mt-1 xs:mt-2'>
                                 <h4 className='text-base xxxs:text-lg font-medium sm:font-semibold text-white my-1'>
@@ -66,14 +66,21 @@ const ServicesSection = () => {
                             </div> */}
                         </div>
                         <div className=' text-gray-100 text-xs xxxs:text-sm sm:text-base'>
-                            Welcome to <span className='font-medium'>TheCleaners</span> Cleaning Services, your one-stop-shop for all your cleaning needs in UAE. Our team of highly skilled professionals offers a complete range of cleaning services for all types of properties, including apartments, houses, small businesses, and multi-floor commercial properties. We take pride in delivering high-quality cleaning services that leave your space sparkling clean and fresh.
+                            Welcome to <span className='font-medium'>TheCleaners</span> Cleaning Services, your one-stop-shop for all your cleaning needs in Sharjah. Our team of highly skilled professionals offers a complete range of cleaning services for all types of properties, including apartments, houses, small businesses, and multi-floor commercial properties. We take pride in delivering high-quality cleaning services that leave your space sparkling clean and fresh.
                         </div>
-                        <div className='block sm:hidden lg:block my-10 mb-14 sm:my-0'>
-                            {/* <h4 className='text-base xxxs:text-lg font-medium sm:font-semibold text-white my-1'>
+                        <div 
+                            // className='block sm:hidden lg:block my-10 mb-14 sm:my-0'
+                        >
+                            {/* <h4 className='text-base xxxs:text-lg font-medium sm:font-semibold text-white '>
                                 Targeted Areas:
-                            </h4> */}
-                            <div className='flex items-center gap-2 xxs:gap-5 text-white flex-wrap justify-center'>
-                                <div className='w-fit relative'>
+                            </h4>
+                            <div className='flex items-center gap-3 font-semibold'>
+                                <PlaceIcon className='text-white' fontSize={xxs ? 'small' : (xs ? 'medium' : 'large')} />
+                                <span className='text-lg text-white'>Sharjah</span>
+                            </div> */}
+                            {/* <div className='flex items-center gap-2 xxs:gap-5 text-white flex-wrap justify-center'>
+                            </div> */}
+                                {/* <div className='w-fit relative'>
                                     <Image
                                         src='/location7.png'
                                         // src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-lg.png')}
@@ -89,7 +96,7 @@ const ServicesSection = () => {
                                             Our Targeted Cities in UAE
                                         </h4>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* <div className='mt-1 xxs:mt-2 font-medium sm:font-semibold text-sm xxxs:text-lg  flex items-center gap-0.5 xxs:gap-1 bg-blue-900/20 shadow-xl backdrop-blur-[10rem] p-1.5 xxxs:p-[6.2px] w-350:p-3 xxs:p-4 rounded-lg'>
                                     <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
                                     <span>Sharjah</span>
@@ -102,7 +109,6 @@ const ServicesSection = () => {
                                     <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
                                     <span>Ajman</span>
                                 </div> */}
-                            </div>
                             {/* <div className='bg-blue-500 flex justify-center items-center p-2 xs:p-4 rounded-full'>
                                 <PhoneIcon fontSize={isSmallScreen ? 'medium' : 'large'}
                                     className='text-white'
@@ -120,7 +126,7 @@ const ServicesSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='pb-40 -mt-64 xxxs:-mt-52 xxs:-mt-60 xs:-mt-64 sm:-mt-80 md:-mt-[350px] z-50'>
+            <div className='pb-40 -mt-40 w-220:-mt-52 xxxs:-mt-48 xxs:-mt-60 xs:-mt-64 sm:-mt-80 md:-mt-[350px] z-50'>
                 <Services />
             </div>
         </section>

@@ -8,18 +8,8 @@ import { useMediaQuery } from 'react-responsive';
 
 const services = [
     {
-        imgSrc: '/mattress1.jpg',
-        title: 'Mattress Cleaning',
-        rate: 25
-    },
-    {
-        imgSrc: '/rugs3.jpg',
-        title: 'Carpet/Rugs Cleaning',
-        rate: 25
-    },
-    {
-        imgSrc: '/villa2.jpg',
-        title: 'Villa Cleaning',
+        imgSrc: '/housCleaning1.jpg',
+        title: 'House Cleaning',
         rate: 25
     },
     {
@@ -28,13 +18,13 @@ const services = [
         rate: 25
     },
     {
-        imgSrc: '/balcony1.jpg',
-        title: 'Balcony Cleaning',
+        imgSrc: '/villa2.jpg',
+        title: 'Villa Cleaning',
         rate: 25
     },
     {
-        imgSrc: '/appliance1.jpg',
-        title: 'Appliance Cleaning',
+        imgSrc: '/office.jpg',
+        title: 'Office Cleaning',
         rate: 25
     },
     {
@@ -48,8 +38,18 @@ const services = [
         rate: 25
     },
     {
+        imgSrc: '/balcony1.jpg',
+        title: 'Balcony Cleaning',
+        rate: 25
+    },
+    {
         imgSrc: '/floor1.jpg',
         title: 'Floor Cleaning',
+        rate: 25
+    },
+    {
+        imgSrc: '/appliance1.jpg',
+        title: 'Appliance Cleaning',
         rate: 25
     },
     {
@@ -62,20 +62,19 @@ const services = [
         title: 'Deep Cleaning',
         rate: 25
     },
-    
-    {
-        imgSrc: '/housCleaning1.jpg',
-        title: 'House Cleaning',
-        rate: 25
-    },
     {
         imgSrc: '/ironing1.jpg',
         title: 'Ironing and Washing Clothes',
         rate: 25
     },
     {
-        imgSrc: '/office.jpg',
-        title: 'Office Cleaning',
+        imgSrc: '/mattress1.jpg',
+        title: 'Mattress Cleaning',
+        rate: 25
+    },
+    {
+        imgSrc: '/rugs3.jpg',
+        title: 'Carpet/Rugs Cleaning',
         rate: 25
     },
 ]
