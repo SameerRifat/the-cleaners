@@ -15,9 +15,9 @@ const SmallBar = () => {
   return (
     <div className='bg-gray-100 h-[35px] xxs:h-[45px] hidden xxs:flex items-center'>
       <div className='shared_container flex justify-end'>
-        <Link href='tel:+971557924200' rel="noopener noreferrer" className="flex items-center gap-0.5 xs:gap-1 md:gap-2">
+        <Link href='tel:+971581249910' rel="noopener noreferrer" className="flex items-center gap-0.5 xs:gap-1 md:gap-2">
           <PhoneIcon className="text-blue-500" fontSize="small" style={iconStyle} />
-          <span className="text-[9px] xxs:text-[10px] sm:text-xs">+971-55-142-7008</span>
+          <span className="text-[9px] xxs:text-[10px] sm:text-xs">+971-58-124-9910</span>
         </Link>
         <div className="flex items-center gap-0.5 xs:gap-1 md:gap-2 mx-3 xs:mx-5 md:mx-10">
           <AccessTimeFilledIcon className="text-blue-500" fontSize="small" style={iconStyle} />

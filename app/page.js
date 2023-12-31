@@ -11,8 +11,8 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className=''>
-      <SmallBar />
-      <Navbar />
+      {/* <SmallBar />
+      <Navbar /> */}
       <Hero />
       <ServicesSection />
       <HowItWorks />

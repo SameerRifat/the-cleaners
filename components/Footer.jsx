@@ -1,0 +1,241 @@
+'use client'
+
+import React, { useState } from 'react'
+import FmdGoodIcon from '@mui/icons-material/FmdGood';
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Collapse } from '@mui/material';
+
+const navigation = [
+    { name: 'Home', href: '/' },
+    {
+        name: 'Services',
+        href: '/services',
+        children: [
+            {
+                id: 1,
+                title: 'Sofa Cleaning',
+                href: '/services/Sofa-Cleaning',
+            },
+            {
+                id: 2,
+                title: 'Carpet Cleaning',
+                href: '/services/Carpet-Cleaning',
+            },
+            {
+                id: 3,
+                title: 'Rugs Cleaning',
+                href: '/services/Rugs-Cleaning',
+            },
+            {
+                id: 4,
+                title: 'Curtains Cleaning',
+                href: '/services/Curtains-Cleaning',
+            },
+            {
+                id: 5,
+                title: 'Deep Cleaning',
+                href: '/services/Deep-Cleaning',
+            },
+            {
+                id: 6,
+                title: 'Glass Cleaning',
+                href: '/services/Glass-Cleaning',
+            },
+            {
+                id: 7,
+                title: 'House Maid',
+                href: '/services/House-Maid',
+            },
+            {
+                id: 8,
+                title: 'Mattress Cleaning',
+                href: '/services/Mattress-Cleaning',
+            },
+            {
+                id: 9,
+                title: 'House Cleaning',
+                href: '/services/House-Cleaning',
+            },
+        ],
+    },
+    { name: 'About Us', href: '/about-us' },
+    { name: 'Contact Us', href: '/contact' },
+]
+
+const Footer = () => {
+    const currentYear = new Date().getFullYear();
+    const [open, setOpen] = useState(null);
+
+    const handleToggle = (index) => {
+        setOpen(open === index ? null : index);
+    };
+
+    return (
+        <footer className='relative'>
+            <div className='absolute top-0 left-0 w-full h-full -z-[9999]'>
+                <Image
+                    src='/footerBanner3.png'
+                    // src={sm ? '/banner2.jpg' : '/banner1.jpg'}
+                    alt="icon"
+                    width={1200}
+                    height={700}
+                    quality={95}
+                    priority={true}
+                    className='max-w-full w-full h-full'
+                />
+            </div>
+            <div className='pt-10 bg-blue-950/40'>
+                <div className='w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6 text-white'>
+                    <div className='order-4 sm:order-1'>
+                        <h2 className='font-bold text-xl sm:text-2xl text-white mb-2'>Information</h2>
+                        <div className='flex gap-2 pb-3 text-center'>
+                            <div className='text-center'>
+                                <FmdGoodIcon className='text-green-500' fontSize='small' />
+                            </div>
+                            <div className='flex flex-col gap-1 text-start'>
+                                <h3 className='font-medium sm:font-semibold sm:text-lg'>Head Office</h3>
+                                <span className='text-sm'>ABC Business Complex,</span>
+                                <span className='text-sm'>34th St - Bu Shaghara - </span>
+                                <span className='text-sm'>Sharjah, UAE</span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 pb-3'>
+                            <div>
+                                <LocalPhoneOutlinedIcon className='text-green-500' fontSize='small' />
+                            </div>
+                            <div className='flex flex-col gap-1'>
+                                <h3 className='font-medium sm:font-semibold sm:text-lg'>Phone Number</h3>
+                                {/* <span className='text-sm'>+971-58-124-9910</span> */}
+                                <Link
+                                    href='tel:+971581249910' target='_blank'
+                                    className='text-sm'
+                                >
+                                    +971-58-124-9910
+                                </Link>
+                            </div>
+                        </div>
+                        <div className='flex gap-2'>
+                            <div>
+                                <EmailOutlinedIcon className='text-green-500' fontSize='small' />
+                            </div>
+                            <div className='flex flex-col gap-1'>
+                                <h3 className='font-medium sm:font-semibold sm:text-lg'>Email Address</h3>
+                                <span className='text-sm'>info@thecleaners.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className=' order-2'>
+                        <h2 className='font-bold text-xl sm:text-2xl text-white mb-2'>Quick Links</h2>
+                        <ul className='ml-1 flex flex-col gap-y-5'>
+                            {navigation.map((navLink, index) => {
+                                if (!navLink.children) {
+                                    return (
+                                        <li key={index} className='flex gap-2 items-center w-fit text-white'>
+                                            <span className='bg-green-500 w-2 h-2 rounded-sm'></span>
+                                            <Link href={navLink.href} className='hover:text-green-500 relative group'>
+                                                {navLink.name}
+                                                <span className="underline absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
+                                            </Link>
+                                        </li>
+                                    )
+                                }
+                            })}
+                            {/* {navigation.map((navLink, index) => {
+                                if (navLink.children) {
+                                    return (
+                                        <>
+                                            <div className="flex w-full items-center justify-between rounded-md px-2 py-3"
+                                            >
+                                                <span className='bg-green-500 w-2 h-2 rounded-sm'></span>
+                                                <Link
+                                                    href={navLink.href}
+                                                    className="font-semibold hover_text_gradient"
+                                                >
+                                                    Services
+                                                </Link>
+                                                <span className="flex items-center cursor-pointer" onClick={() => handleToggle(index)}>
+                                                    {open ? (
+                                                        <KeyboardArrowUpIcon className=" text-white" aria-hidden="true" fontSize='medium' />
+                                                    ) : (
+                                                        <KeyboardArrowDownIcon className=" text-white" aria-hidden="true" fontSize='medium' />
+                                                    )}
+                                                </span>
+                                            </div>
+                                            <Collapse in={open === index} timeout="auto" unmountOnExit>
+                                                <div className="pl-3">
+                                                    <div className="space-y-1">
+                                                        {navLink.children.map((child) => (
+                                                            // <div key={child.id} className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover:text-blue-500 w-full h-full">
+                                                            <Link
+                                                                href={child.href}
+                                                                className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover_text_gradient w-full h-full rounded-md"
+                                                            >
+                                                                {child.title}
+                                                            </Link>
+                                                            // </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            </Collapse>
+                                        </>
+                                    )
+                                } else {
+                                    return (
+                                        <li key={index} className='flex gap-4 items-center hover:underline w-fit text-white'>
+                                            <span className='bg-green-500 w-2 h-2 rounded-sm'></span>
+                                            <Link href={navLink.href} className='hover:text-green-500'>{navLink.name}</Link>
+                                        </li>
+                                    )
+                                }
+                            })} */}
+                        </ul>
+                    </div>
+                    <div className='order-3'>
+                        <h2 className='font-bold text-xl sm:text-2xl text-white mb-2'>Services</h2>
+                        <ul className='ml-1 grid grid-cols-2 gap-2'>
+                            {navigation.map((navLink, index) => {
+                                if (navLink.children) {
+                                    return (
+                                        <>
+                                            {navLink.children.map((child) => (
+                                                <li key={child.id} className='flex gap-1.5 items-center w-fit text-white p-0.5'>
+                                                    <span className='bg-green-500 w-[6px] h-[6px] rounded-[1px]'></span>
+                                                    <Link href={child.href} className='hover:text-green-500 text-sm group relative'>
+                                                        {child.title}
+                                                        <span className="underline absolute -bottom-0.5 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </>
+                                    )
+                                }
+                            })}
+                        </ul>
+                    </div>
+                    <div className='order-1 sm:order-4 flex flex-col '>
+                        <div className='flex items-start justify-start w-32'>
+                            {/* <Link href='/' className=' w-full h-full relative'> */}
+                            <Image src="/logo3.png" alt="Logo" quality={95} priority={true} width={150} height={100} className='max-w-full w-full h-auto' />
+                            {/* <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs text-xl:sm:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2> */}
+                            {/* </Link> */}
+                        </div>
+                        <p className='text-sm pl-3 mt-5'>
+                            <span className='font-medium'>TheCleaners</span> is a professional cleaning company that is fully insured and bonded and will serve all your cleaning services needs in a professional way through an immense range of environment friendly safe - cleaning products, and with a dedicated team of professionals, to build the customers' satisfaction, at a very reasonable cost.
+                        </p>
+                    </div>
+                </div>
+                <div className='py-5 border-t border-gray-200 mt-8 text-center text-xs text-white'>
+                    Copyright © {currentYear} TheCleaners. All right reserved
+                </div>
+            </div>
+        </footer>
+    )
+}
+
+export default Footer
