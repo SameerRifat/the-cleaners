@@ -19,48 +19,73 @@ const navigation = [
         children: [
             {
                 id: 1,
-                title: 'Sofa Cleaning',
-                href: '/services/Sofa-Cleaning',
-            },
-            {
-                id: 2,
-                title: 'Carpet Cleaning',
-                href: '/services/Carpet-Cleaning',
-            },
-            {
-                id: 3,
-                title: 'Rugs Cleaning',
-                href: '/services/Rugs-Cleaning',
-            },
-            {
-                id: 4,
-                title: 'Curtains Cleaning',
-                href: '/services/Curtains-Cleaning',
-            },
-            {
-                id: 5,
-                title: 'Deep Cleaning',
-                href: '/services/Deep-Cleaning',
-            },
-            {
-                id: 6,
-                title: 'Glass Cleaning',
-                href: '/services/Glass-Cleaning',
-            },
-            {
-                id: 7,
-                title: 'House Maid',
-                href: '/services/House-Maid',
-            },
-            {
-                id: 8,
                 title: 'Mattress Cleaning',
                 href: '/services/Mattress-Cleaning',
             },
             {
+                id: 2,
+                title: 'Rugs Cleaning',
+                href: '/services/Rugs-Cleaning',
+            },
+            {
+                id: 3,
+                title: 'Villa Cleaning',
+                href: '/services/Villa-Cleaning',
+            },
+            {
+                id: 4,
+                title: 'Appartment Cleaning',
+                href: '/services/Appartment-Cleaning',
+            },
+            {
+                id: 5,
+                title: 'Balcony Cleaning',
+                href: '/services/Balcony-Cleaning',
+            },
+            {
+                id: 6,
+                title: 'Appliance Cleaning',
+                href: '/services/Appliance-Cleaning',
+            },
+            {
+                id: 7,
+                title: 'Kitchen Cleaning',
+                href: '/services/Kitchen-Cleaning',
+            },
+            {
+                id: 8,
+                title: 'Washroom Cleaning',
+                href: '/services/Washroom-Cleaning',
+            },
+            {
                 id: 9,
+                title: 'Floor Cleaning',
+                href: '/services/Floor-Cleaning',
+            },
+            {
+                id: 10,
+                title: 'House Maid Services',
+                href: '/services/House-Maid-Services',
+            },
+            {
+                id: 11,
+                title: 'Deep Cleaning',
+                href: '/services/Deep-Cleaning',
+            },
+            {
+                id: 12,
                 title: 'House Cleaning',
                 href: '/services/House-Cleaning',
+            },
+            {
+                id: 13,
+                title: 'Ironing and Washing Clothes',
+                href: '/services/Ironing-and-Washing-Clothes',
+            },
+            {
+                id: 14,
+                title: 'Office Cleaning',
+                href: '/services/Office-Cleaning',
             },
         ],
     },
@@ -206,7 +231,7 @@ const Footer = () => {
                                             {navLink.children.map((child) => (
                                                 <li key={child.id} className='flex gap-1.5 items-center w-fit text-white p-0.5'>
                                                     <span className='bg-green-500 w-[6px] h-[6px] rounded-[1px]'></span>
-                                                    <Link href={child.href} className='hover:text-green-500 text-sm group relative'>
+                                                    <Link href={child.href} className='hover:text-green-500 text-xs group relative'>
                                                         {child.title}
                                                         <span className="underline absolute -bottom-0.5 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
                                                     </Link>
