@@ -10,72 +10,58 @@ const services = [
     {
         imgSrc: '/housCleaning1.jpg',
         title: 'House Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/appartment.jpg',
         title: 'Appartment Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/villa2.jpg',
         title: 'Villa Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/office.jpg',
         title: 'Office Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/kitchen1.jpg',
         title: 'Kitchen Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/washroom1.jpg',
         title: 'Washroom Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/balcony1.jpg',
         title: 'Balcony Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/floor1.jpg',
         title: 'Floor Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/appliance1.jpg',
         title: 'Appliance Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/houseMaid2.jpg',
         title: 'House Maid Services',
-        rate: 25
     },
     {
         imgSrc: '/deep1.jpg',
         title: 'Deep Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/ironing1.jpg',
         title: 'Ironing and Washing Clothes',
-        rate: 25
     },
     {
         imgSrc: '/mattress1.jpg',
         title: 'Mattress Cleaning',
-        rate: 25
     },
     {
         imgSrc: '/rugs3.jpg',
-        title: 'Carpet/Rugs Cleaning',
-        rate: 25
+        title: 'Rugs Cleaning',
     },
 ]
 
@@ -139,43 +125,43 @@ export default Services
 //     {
 //         imgSrc: '/mattress1.jpg',
 //         title: 'Mattress Cleaning',
-//         rate: 25
+//      
 //     },
 //     {
 //         imgSrc: '/carpet1.jpg',
 //         title: 'Carpet Cleaning',
-//         rate: 25
+//      
 //     },
 //     {
 //         imgSrc: '/rugs1.jpg',
 //         title: 'Rugs Cleaning',
-//         rate: 25
+//      
 //     },
 //     {
 //         imgSrc: '/curtains1.jpg',
 //         title: 'Curtains Cleaning',
-//         rate: 25
+//      
 //     },
 //     {
 //         imgSrc: '/houseMaid2.jpg',
 //         title: 'House Maid',
-//         rate: 25
+//      
 //     },
 //     {
 //         imgSrc: '/deep1.jpg',
 //         title: 'Deep Cleaning',
-//         rate: 25
+//      
 //     },
 //     {
 //         imgSrc: '/glass1.jpg',
 //         title: 'Glass Cleaning',
-//         rate: 25
+//      
 //     },
     
 //     {
 //         imgSrc: '/housCleaning1.jpg',
 //         title: 'House Cleaning',
-//         rate: 25
+//      
 //     },
 // ]
 
