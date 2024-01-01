@@ -80,8 +80,8 @@ const Hero = () => {
                             <ArrowForwardIcon className='ml-2 group-hover:translate-x-[50px]'/>
                         </Link> */}
                         <Link
-                            href="#contact"
-                            className="group w-fit bg_gradient text-white font-medium text-sm xxxs:text-base px-3 xxs:px-4 xs:px-5 sm:px-6 md:px-7 py-2 xxs:py-2.5 md:py-3 rounded-sm flex items-center justify-between gap-1 xs:gap-2
+                            href="/services"
+                            className="group w-fit bg_gradient text-white font-medium text-sm xxxs:text-base px-2 xxxs:px-3 xs:px-4 sm:px-5 md:px-6 py-2 xxs:py-3 md:py-4 rounded-sm flex items-center justify-between gap-1 xs:gap-2
                                         outline-none shadow-lg hover:scale-105 hover:shadow-xl focus:scale-110 hover_bg_gradient active:scale-105 transition-all"
                         >
                             <span className='hidden xxs:flex'>Explore</span> Our Services{" "}

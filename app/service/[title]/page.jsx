@@ -1,6 +1,6 @@
 'use client'
 
-import { servicesDetail } from '@/data/servicesData';
+import { metadata, servicesDetail } from '@/data/servicesData';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive';
@@ -10,7 +10,7 @@ import DoneIcon from '@mui/icons-material/Done';
 
 const ServiceDetail = ({ params }) => {
     const formattedTitle = params.title ? params.title.replace(/-/g, ' ') : '';
-    const service = servicesDetail.find((s) => s.title === formattedTitle);
+    const service = servicesDetail.find((s) => s.title.toLowerCase() === formattedTitle);
 
     const [forceRerender, setForceRerender] = useState(false);
 
@@ -25,6 +25,10 @@ const ServiceDetail = ({ params }) => {
 
     return (
         <>
+            {/* <Head>
+                <title>{`${title} - ${metadata.title}`}</title>
+                <meta name="description" content={`Details about ${service.title} service: ${metadata.description}`} />
+            </Head> */}
             <div className='h-[20vh] xxxs:h-[30vh] xxs:h-[40vh] sm:h-[50vh] lg:h-[60vh] w-full relative as'>
                 <Image
                     src={sm ? banner2 : banner1}

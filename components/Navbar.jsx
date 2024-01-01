@@ -21,72 +21,72 @@ const navigation = [
             {
                 id: 1,
                 title: 'Mattress Cleaning',
-                href: '/services/Mattress-Cleaning',
+                href: '/service/Mattress-Cleaning',
             },
             {
                 id: 2,
                 title: 'Rugs Cleaning',
-                href: '/services/Rugs-Cleaning',
+                href: '/service/Rugs-Cleaning',
             },
             {
                 id: 3,
                 title: 'Villa Cleaning',
-                href: '/services/Villa-Cleaning',
+                href: '/service/Villa-Cleaning',
             },
             {
                 id: 4,
                 title: 'Appartment Cleaning',
-                href: '/services/Appartment-Cleaning',
+                href: '/service/Appartment-Cleaning',
             },
             {
                 id: 5,
                 title: 'Balcony Cleaning',
-                href: '/services/Balcony-Cleaning',
+                href: '/service/Balcony-Cleaning',
             },
             {
                 id: 6,
                 title: 'Appliance Cleaning',
-                href: '/services/Appliance-Cleaning',
+                href: '/service/Appliance-Cleaning',
             },
             {
                 id: 7,
                 title: 'Kitchen Cleaning',
-                href: '/services/Kitchen-Cleaning',
+                href: '/service/Kitchen-Cleaning',
             },
             {
                 id: 8,
                 title: 'Washroom Cleaning',
-                href: '/services/Washroom-Cleaning',
+                href: '/service/Washroom-Cleaning',
             },
             {
                 id: 9,
                 title: 'Floor Cleaning',
-                href: '/services/Floor-Cleaning',
+                href: '/service/Floor-Cleaning',
             },
             {
                 id: 10,
                 title: 'House Maid Services',
-                href: '/services/House-Maid-Services',
+                href: '/service/House-Maid-Services',
             },
             {
                 id: 11,
                 title: 'Deep Cleaning',
-                href: '/services/Deep-Cleaning',
+                href: '/service/Deep-Cleaning',
             },
             {
                 id: 12,
                 title: 'House Cleaning',
-                href: '/services/House-Cleaning',
+                href: '/service/House-Cleaning',
             },
             {
                 id: 13,
                 title: 'Ironing and Washing Clothes',
-                href: '/services/Ironing-and-Washing-Clothes',
+                href: '/service/Ironing-and-Washing-Clothes',
             },
             {
                 id: 14,
                 title: 'Office Cleaning',
-                href: '/services/Office-Cleaning',
+                href: '/service/Office-Cleaning',
             },
         ],
     },
@@ -107,11 +107,11 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white border-b border-gray-100 shadow-2xl z-[9999]">
-            <div className="shared_container flex justify-between items-center h-[50px] xxs:h-[60px] sm:h-[70px] ">
+        <nav className="bg-white border-b border-gray-100 shadow-md z-[9999]">
+            <div className="shared_container flex justify-between items-center h-[50px] xxxs:h-[60px] sm:h-[70px] ">
                 <div className="">
                     <Link href='/'>
-                        <Image src="/logo3.png" alt="Logo" width={150} height={100} className='max-w-full w-[80px] xxs:w-28 sm:w-32 h-auto' />
+                        <Image src="/logo3.png" alt="Logo" width={150} height={100} className='max-w-full w-[80px] xxxs:w-[90px] xxs:w-28 sm:w-32 h-auto' />
                         {/* <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2> */}
                     </Link>
                 </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
                                 return (
                                     <div className="">
                                         <Link
-                                            href={navLink.href}
+                                            href={navLink.href.toLowerCase()}
                                             onMouseEnter={() => setOpen2(true)}
                                             onMouseLeave={() => setOpen2(false)}
                                             className="font-extrabold py-0.5 pb-[26px] relative group text-gray-600 hover_text_gradient group"
@@ -154,8 +154,9 @@ const Navbar = () => {
                                                             // <ArrowRightIcon />
                                                             <Link
                                                                 key={child.id}
-                                                                href={child.href}
+                                                                href={child.href.toLowerCase()}
                                                                 className='text-gray-700 text-sm flex items-center hover_text_gradient group'
+                                                                onClick={() => setOpen2(false)}
                                                             >
                                                                 <ArrowRightIcon className='group-hover:text-blue-500' />
                                                                 {child.title}
@@ -172,7 +173,7 @@ const Navbar = () => {
                                 return (
                                     <Link
                                         key={navLink.name}
-                                        href={navLink.href}
+                                        href={navLink.href.toLowerCase()}
                                         className='text-gray-600 py-0.5 font-semibold hover_text_gradient duration-500 relative group'
                                     >
                                         {navLink.name}
@@ -238,7 +239,7 @@ const Navbar = () => {
                                         <div className="flex w-full items-center justify-between rounded-md hover:bg-gray-50 px-2 py-3"
                                         >
                                             <Link
-                                                href={navLink.href}
+                                                href={navLink.href.toLowerCase()}
                                                 className="font-semibold hover_text_gradient"
                                             >
                                                 Services
@@ -257,7 +258,7 @@ const Navbar = () => {
                                                     {navLink.children.map((child) => (
                                                         // <div key={child.id} className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover:text-blue-500 w-full h-full">
                                                         <Link
-                                                            href={child.href}
+                                                            href={child.href.toLowerCase()}
                                                             onClick={() => setOpenSidebar(false)}
                                                             className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover_text_gradient w-full h-full rounded-md"
                                                         >
@@ -273,7 +274,7 @@ const Navbar = () => {
                             } else {
                                 return (
                                     <Link key={navLink.name}
-                                        href={navLink.href}
+                                        href={navLink.href.toLowerCase()}
                                         onClick={() => setOpenSidebar(false)}
                                         className='text-black px-2 py-3 font-semibold w-full rounded-md hover:bg-gray-100 hover_text_gradient'
                                     >

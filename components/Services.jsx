@@ -75,7 +75,7 @@ const Services = () => {
                     return (
                         <Link
                             key={service.title}
-                            href={`/services/${encodeURIComponent(service.title.replace(/\s+/g, '-'))}`}
+                            href={`/service/${encodeURIComponent(service.title.toLowerCase().replace(/\s+/g, '-'))}`}
                             className='rounded-md border border-white bg-white group cursor-pointer shadow-lg hover:shadow-xl outline-none relative group'
                         >
                             <div className='overflow-hidden rounded-md'>

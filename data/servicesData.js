@@ -1,4 +1,8 @@
 
+// export const metadata = {
+//     title: 'TheCleaners Cleaning Service in Dubai',
+//     description: 'TheWashers Sofa Cleaning Service in Dubai',
+// }
 
 export const servicesDetail = [
     {

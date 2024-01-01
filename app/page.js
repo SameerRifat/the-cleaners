@@ -6,18 +6,27 @@ import Services from '@/components/Services'
 import ServicesSection from '@/components/ServicesSection'
 import SmallBar from '@/components/SmallBar'
 import WhyChooseUs from '@/components/WhyChooseUs'
+// import { metadata } from '@/data/servicesData'
+// import Head from 'next/head'
 import Image from 'next/image'
+
 
 export default function Home() {
   return (
-    <main className=''>
-      {/* <SmallBar />
+    <>
+      {/* <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </Head> */}
+      <main className=''>
+        {/* <SmallBar />
       <Navbar /> */}
-      <Hero />
-      <ServicesSection />
-      <HowItWorks />
-      <WhyChooseUs />
-      <GetInTouch />
-    </main>
+        <Hero />
+        <ServicesSection />
+        <HowItWorks />
+        <WhyChooseUs />
+        <GetInTouch />
+      </main>
+    </>
   )
 }

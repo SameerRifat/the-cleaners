@@ -20,72 +20,72 @@ const navigation = [
             {
                 id: 1,
                 title: 'Mattress Cleaning',
-                href: '/services/Mattress-Cleaning',
+                href: '/service/Mattress-Cleaning',
             },
             {
                 id: 2,
                 title: 'Rugs Cleaning',
-                href: '/services/Rugs-Cleaning',
+                href: '/service/Rugs-Cleaning',
             },
             {
                 id: 3,
                 title: 'Villa Cleaning',
-                href: '/services/Villa-Cleaning',
+                href: '/service/Villa-Cleaning',
             },
             {
                 id: 4,
                 title: 'Appartment Cleaning',
-                href: '/services/Appartment-Cleaning',
+                href: '/service/Appartment-Cleaning',
             },
             {
                 id: 5,
                 title: 'Balcony Cleaning',
-                href: '/services/Balcony-Cleaning',
+                href: '/service/Balcony-Cleaning',
             },
             {
                 id: 6,
                 title: 'Appliance Cleaning',
-                href: '/services/Appliance-Cleaning',
+                href: '/service/Appliance-Cleaning',
             },
             {
                 id: 7,
                 title: 'Kitchen Cleaning',
-                href: '/services/Kitchen-Cleaning',
+                href: '/service/Kitchen-Cleaning',
             },
             {
                 id: 8,
                 title: 'Washroom Cleaning',
-                href: '/services/Washroom-Cleaning',
+                href: '/service/Washroom-Cleaning',
             },
             {
                 id: 9,
                 title: 'Floor Cleaning',
-                href: '/services/Floor-Cleaning',
+                href: '/service/Floor-Cleaning',
             },
             {
                 id: 10,
                 title: 'House Maid Services',
-                href: '/services/House-Maid-Services',
+                href: '/service/House-Maid-Services',
             },
             {
                 id: 11,
                 title: 'Deep Cleaning',
-                href: '/services/Deep-Cleaning',
+                href: '/service/Deep-Cleaning',
             },
             {
                 id: 12,
                 title: 'House Cleaning',
-                href: '/services/House-Cleaning',
+                href: '/service/House-Cleaning',
             },
             {
                 id: 13,
                 title: 'Ironing and Washing Clothes',
-                href: '/services/Ironing-and-Washing-Clothes',
+                href: '/service/Ironing-and-Washing-Clothes',
             },
             {
                 id: 14,
                 title: 'Office Cleaning',
-                href: '/services/Office-Cleaning',
+                href: '/service/Office-Cleaning',
             },
         ],
     },
@@ -163,7 +163,7 @@ const Footer = () => {
                                     return (
                                         <li key={index} className='flex gap-2 items-center w-fit text-white'>
                                             <span className='bg-green-500 w-2 h-2 rounded-sm'></span>
-                                            <Link href={navLink.href} className='hover:text-green-500 relative group'>
+                                            <Link href={navLink.href.toLowerCase()} className='hover:text-green-500 relative group'>
                                                 {navLink.name}
                                                 <span className="underline absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
                                             </Link>
@@ -231,7 +231,7 @@ const Footer = () => {
                                             {navLink.children.map((child) => (
                                                 <li key={child.id} className='flex gap-1.5 items-center w-fit text-white p-0.5'>
                                                     <span className='bg-green-500 w-[6px] h-[6px] rounded-[1px]'></span>
-                                                    <Link href={child.href} className='hover:text-green-500 text-xs group relative'>
+                                                    <Link href={child.href.toLowerCase()} className='hover:text-green-500 text-xs group relative'>
                                                         {child.title}
                                                         <span className="underline absolute -bottom-0.5 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
                                                     </Link>
