@@ -55,17 +55,17 @@ const ServiceDetail = ({ params }) => {
                 <div className='shared_container pt-10 pb-20 sm:py-20 w-full lg:w-[60%]'>
                     <h1 className='text-gray-800 xxxs:font-bold w-350:font-extrabold text-xl xxxs:text-2xl w-350:text-3xl xs:text-4xl mb-5'>{title} Service</h1>
                     {/* <img src={imgSrc} alt={`${title} Image`} /> */}
-                    <p className='text-gray-700 leading-relaxed'>{description}</p>
+                    <p className='text-gray-700 leading-relaxed text-sm xxxs:text-base'>{description}</p>
 
                     <div className='mt-10 sm:mt-14'>
                         <h2 className='text-xl font-bold'>Key Features</h2>
                         <ul className='mt-5 flex flex-col gap-4'>
                             {features.map((feature, index) => (
                                 <li key={index}
-                                    className='flex items-center gap-3'
+                                    className='flex items-center gap-3 text-sm xxxs:text-base'
                                 >
-                                    <div>
-                                        <span className='w-7 h-7 sm:h-8 sm:w-8 flex justify-center items-center self-start p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500'>
+                                    <div className='self-start'>
+                                        <span className='w-7 h-7 sm:h-7 sm:w-7 flex justify-center items-center self-start p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500 mt-0.5'>
                                             <DoneIcon
                                                 fontSize={sm ? 'small' : 'medium'}
                                                 className='text-white font-bold'
@@ -84,7 +84,7 @@ const ServiceDetail = ({ params }) => {
                             {methods.map((method, index) => (
                                 <li
                                     key={index}
-                                    className='flex items-center gap-3'
+                                    className='flex items-center gap-3 text-sm xxxs:text-base'
                                 >
                                     <div className='w-4 h-4 flex justify-center items-center self-start sm:self-center mt-[4px] sm:mt-0'>
                                         <div className=' bg-gradient-to-r from-blue-500 to-green-500 w-3 h-3 rounded-full'></div>
@@ -102,10 +102,10 @@ const ServiceDetail = ({ params }) => {
                         <ul className='mt-5 flex flex-col gap-4'>
                             {benefits.map((benefit, index) => (
                                 <li key={index}
-                                    className='flex items-center gap-3'
+                                    className='flex items-center gap-3 text-sm xxxs:text-base'
                                 >
-                                    <div>
-                                        <span className='w-7 h-7 sm:h-8 sm:w-8 flex justify-center items-center self-start p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500'>
+                                    <div className='self-start'>
+                                        <span className='w-7 h-7 sm:h-7 sm:w-7 flex justify-center items-center self-start p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500 mt-0.5'>
                                             <DoneIcon
                                                 fontSize={sm ? 'small' : 'medium'}
                                                 className='text-white font-bold'
