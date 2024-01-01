@@ -20,25 +20,26 @@ const ServiceDetail = ({ params }) => {
         setForceRerender(prevState => !prevState);
     }, [sm]);
 
-    const { imgSrc, title, description, features, methods, benefits } = service;
+    const { banner1, banner2, title, description, features, methods, benefits } = service;
 
 
     return (
         <>
-            <div className='h-[30vh] xxs:h-[40vh] sm:h-[60vh] w-full relative'>
+            <div className='h-[20vh] xxxs:h-[30vh] xxs:h-[40vh] sm:h-[50vh] lg:h-[60vh] w-full relative as'>
                 <Image
-                    // src={sm ? '/about4-4.png' : '/about4.jpg'}
-                    src={imgSrc}
+                    src={sm ? banner2 : banner1}
+                    // src={banner1}
                     alt={`${title} Image`}
                     width={1200}
                     height={1000}
                     quality={95}
                     priority={true}
                     className='max-w-full w-full h-full -z-50'
+                    key={forceRerender}
                 />
                 <div className='absolute top-0 left-0 w-full h-full z-50 flex items-center'>
                     <div className='shared_container w-full h-fit flex justify-center items-center'>
-                        <div className='flex flex-col bg-black/20 p-5 rounded-md'>
+                        <div className='flex flex-col bg-black/20 p-2 w-350:p-3 xxs:p-4 xs:p-5 rounded-md'>
                             <div className='flex items-center justify-center gap-2 sm:gap-5'>
                                 <div className={`bg-white w-5 xxxs:w-8 xs:w-14 h-[1px] rounded-full`}></div>
                                 <h3 className={` font-semibold uppercase text-xs w-350:text-sm xxs:text-base text-white`}>Service Detail</h3>
@@ -65,7 +66,7 @@ const ServiceDetail = ({ params }) => {
                                     className='flex items-center gap-3 text-sm xxxs:text-base'
                                 >
                                     <div className='self-start'>
-                                        <span className='w-7 h-7 sm:h-7 sm:w-7 flex justify-center items-center self-start p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500 mt-0.5'>
+                                        <span className='w-5 h-5 xxxs:w-6 xxxs:h-6 sm:h-7 sm:w-7 flex justify-center items-center self-start p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500 mt-0.5'>
                                             <DoneIcon
                                                 fontSize={sm ? 'small' : 'medium'}
                                                 className='text-white font-bold'
@@ -79,7 +80,7 @@ const ServiceDetail = ({ params }) => {
                     </div>
 
                     <div className='my-10 sm:my-14'>
-                        <h2 className='text-xl font-bold'>Methods</h2>
+                        <h2 className='text-xl font-bold'>Cleaning Methods</h2>
                         <ul className='mt-5 flex flex-col gap-4'>
                             {methods.map((method, index) => (
                                 <li
@@ -105,7 +106,7 @@ const ServiceDetail = ({ params }) => {
                                     className='flex items-center gap-3 text-sm xxxs:text-base'
                                 >
                                     <div className='self-start'>
-                                        <span className='w-7 h-7 sm:h-7 sm:w-7 flex justify-center items-center self-start p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500 mt-0.5'>
+                                        <span className='w-5 h-5 xxxs:w-6 xxxs:h-6 sm:h-7 sm:w-7 flex justify-center items-center self-start p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500 mt-0.5'>
                                             <DoneIcon
                                                 fontSize={sm ? 'small' : 'medium'}
                                                 className='text-white font-bold'
