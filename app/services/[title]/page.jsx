@@ -14,11 +14,11 @@ const ServiceDetail = ({ params }) => {
 
     const [forceRerender, setForceRerender] = useState(false);
 
-    const isSmallScreen = useMediaQuery({ maxWidth: 640 });
+    const sm = useMediaQuery({ maxWidth: 640 });
 
     useEffect(() => {
         setForceRerender(prevState => !prevState);
-    }, [isSmallScreen]);
+    }, [sm]);
 
     const { imgSrc, title, description, features, methods, benefits } = service;
 
@@ -52,31 +52,33 @@ const ServiceDetail = ({ params }) => {
                 </div>
             </div>
             <div className='bg-white'>
-                <div className='shared_container py-20 w-full lg:w-[60%]'>
+                <div className='shared_container pt-10 pb-20 sm:py-20 w-full lg:w-[60%]'>
                     <h1 className='text-gray-800 xxxs:font-bold w-350:font-extrabold text-xl xxxs:text-2xl w-350:text-3xl xs:text-4xl mb-5'>{title} Service</h1>
                     {/* <img src={imgSrc} alt={`${title} Image`} /> */}
                     <p className='text-gray-700 leading-relaxed'>{description}</p>
 
-                    <div className='mt-14'>
+                    <div className='mt-10 sm:mt-14'>
                         <h2 className='text-xl font-bold'>Key Features</h2>
                         <ul className='mt-5 flex flex-col gap-4'>
                             {features.map((feature, index) => (
                                 <li key={index}
                                     className='flex items-center gap-3'
                                 >
-                                    <span className='p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500'>
-                                        <DoneIcon
-                                            fontSize='medium'
-                                            className='text-white font-bold'
-                                        />
-                                    </span>
+                                    <div>
+                                        <span className='w-7 h-7 sm:h-8 sm:w-8 flex justify-center items-center self-start p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500'>
+                                            <DoneIcon
+                                                fontSize={sm ? 'small' : 'medium'}
+                                                className='text-white font-bold'
+                                            />
+                                        </span>
+                                    </div>
                                     {feature}
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    <div className='my-14'>
+                    <div className='my-10 sm:my-14'>
                         <h2 className='text-xl font-bold'>Methods</h2>
                         <ul className='mt-5 flex flex-col gap-4'>
                             {methods.map((method, index) => (
@@ -84,8 +86,12 @@ const ServiceDetail = ({ params }) => {
                                     key={index}
                                     className='flex items-center gap-3'
                                 >
-                                    <span className='bg-gradient-to-r from-blue-500 to-green-500 w-3 h-3 rounded-full'></span>
-                                    {method}
+                                    <div className='w-4 h-4 flex justify-center items-center self-start sm:self-center mt-[4px] sm:mt-0'>
+                                        <div className=' bg-gradient-to-r from-blue-500 to-green-500 w-3 h-3 rounded-full'></div>
+                                    </div>
+                                    <span>
+                                        {method}
+                                    </span>
                                 </li>
                             ))}
                         </ul>
@@ -98,12 +104,14 @@ const ServiceDetail = ({ params }) => {
                                 <li key={index}
                                     className='flex items-center gap-3'
                                 >
-                                    <span className='p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500'>
-                                        <DoneIcon
-                                            fontSize='medium'
-                                            className='text-white font-bold'
-                                        />
-                                    </span>
+                                    <div>
+                                        <span className='w-7 h-7 sm:h-8 sm:w-8 flex justify-center items-center self-start p-0.5 rounded-full bg-gradient-to-br from-blue-500 to-green-500'>
+                                            <DoneIcon
+                                                fontSize={sm ? 'small' : 'medium'}
+                                                className='text-white font-bold'
+                                            />
+                                        </span>
+                                    </div>
                                     {benefit}
                                 </li>
                             ))}
