@@ -115,7 +115,7 @@ const Navbar = () => {
                         {/* <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2> */}
                     </Link>
                 </div>
-                <div className="hidden md:flex md:flex-1 justify-center items-center h-full">
+                <div className="hidden lg:flex lg:flex-1 justify-center items-center h-full">
                     <div className='space-x-10 text-base flex items-center'>
                         {navigation.map((navLink) => {
                             if (navLink.children) {
@@ -185,7 +185,7 @@ const Navbar = () => {
 
                     </div>
                 </div>
-                <div className="hidden md:flex">
+                <div className="hidden lg:flex">
                     <Link
                         href='/contact'
                         // href={`https://wa.me/${971557924200}`}
@@ -196,7 +196,7 @@ const Navbar = () => {
                         Conact Now
                     </Link>
                 </div>
-                <button onClick={() => setOpenSidebar(true)} className='md:hidden text-gray-800'>
+                <button onClick={() => setOpenSidebar(true)} className='lg:hidden text-gray-800'>
                     <MenuOutlinedIcon fontSize={isSmallScreen ? 'small' : 'medium'} />
                 </button>
             </div>
