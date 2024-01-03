@@ -62,7 +62,7 @@ const Hero = () => {
         <header className=''>
             <div
                 // className='w-full m-0 p-0 overflow-hidden h-full'
-                className='h-[30vh] xxxs:h-[32vh] xs:h-[40vh] sm:h-[50vh] lg:h-[80vh] w-full relative'
+                className='h-[30vh] xxxs:h-[32vh] xs:h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh] w-full relative'
             >
                 <Slider {...settings} className='h-full w-full'>
                     {slides.map((slide, index) => (
