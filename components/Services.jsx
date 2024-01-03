@@ -8,11 +8,11 @@ import { useMediaQuery } from 'react-responsive';
 
 const services = [
     {
-        imgSrc: '/housCleaning1.jpg',
+        imgSrc: '/housCleaning4.jpg',
         title: 'House Cleaning',
     },
     {
-        imgSrc: '/appartment.jpg',
+        imgSrc: '/appartment3.jpg',
         title: 'Appartment Cleaning',
     },
     {
@@ -20,11 +20,11 @@ const services = [
         title: 'Villa Cleaning',
     },
     {
-        imgSrc: '/office.jpg',
+        imgSrc: '/officeCleaning2.jpg',
         title: 'Office Cleaning',
     },
     {
-        imgSrc: '/kitchen1.jpg',
+        imgSrc: '/kitchen4.jpg',
         title: 'Kitchen Cleaning',
     },
     {

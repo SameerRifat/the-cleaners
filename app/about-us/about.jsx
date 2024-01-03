@@ -91,13 +91,13 @@ const About = () => {
                         </div>
                         <div className=''>
                             <Image
-                                src='/aboutUs.jpg'
+                                src='/housCleaning4.jpg'
                                 alt="banner"
                                 width={1200}
                                 height={1000}
                                 quality={95}
                                 priority={true}
-                                className='max-w-full w-full h-full -z-50'
+                                className='max-w-full w-full h-auto -z-50'
                             />
                         </div>
                     </div>

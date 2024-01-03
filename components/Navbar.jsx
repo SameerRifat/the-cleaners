@@ -242,7 +242,7 @@ const Navbar = () => {
                                         >
                                             <Link
                                                 href={navLink.href.toLowerCase()}
-                                                className="font-semibold hover_text_gradient"
+                                                className="font-semibold hover_text_gradient text-base"
                                             >
                                                 Services
                                             </Link>

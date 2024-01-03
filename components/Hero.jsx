@@ -54,7 +54,7 @@ const Hero = () => {
             image: "/slider2.jpg",
         },
         {
-            image: "/slider4.jpg",
+            image: "/ironingBanner1.jpg",
         }
     ];
 
