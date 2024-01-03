@@ -2,6 +2,9 @@
 
 import React, { useRef } from 'react'
 import SendIcon from '@mui/icons-material/Send';
+import SendBtn from './SendBtn';
+import { toast } from 'react-hot-toast';
+import { sendEmail } from '@/actions/sendEmail';
 
 const services = [
     {
@@ -70,18 +73,18 @@ const ContactForm = () => {
             <form
                 ref={formRef}
                 className="flex flex-col gap-3"
-            // action={async (FormData) => {
-            //     const { data, error } = await sendEmail(FormData)
-            //     if (data?.error) {
-            //         toast.error(data.error.message)
-            //         return;
-            //     }
-            //     toast.success("Email sent successfully")
+                action={async (FormData) => {
+                    const { data, error } = await sendEmail(FormData)
+                    if (data?.error) {
+                        toast.error(data.error.message)
+                        return;
+                    }
+                    toast.success("Email sent successfully")
 
-            //     if (formRef.current) {
-            //         formRef.current.reset();
-            //     }
-            // }}
+                    if (formRef.current) {
+                        formRef.current.reset();
+                    }
+                }}
             >
                 <div className='flex flex-col gap-1'>
                     <label className='font-medium'>Name<span className='text-orange-500'>*</span></label>
@@ -118,7 +121,8 @@ const ContactForm = () => {
                 </div>
                 <div className='flex flex-col gap-1'>
                     <label className='font-medium clear-start'>Choose a service<span className='text-orange-500'>*</span></label>
-                    <select name="cars" id="cars"
+                    <select name="service" id="cars"
+                        required
                         className="h-12 p-2 bg-gray-50 border border-black/5 rounded-sm focus:outline-none placeholder:text-xs"
                     >
                         {services.map((service, ind) => {
@@ -148,14 +152,14 @@ const ContactForm = () => {
                         maxLength={5000}
                     ></textarea>
                 </div>
-                {/* <SendBtn /> */}
-                <button
+                <SendBtn />
+                {/* <button
                     type="submit"
                     className="group mt-5 flex items-center justify-center gap-2 h-[3rem] w-full bg-gradient-to-r from-blue-600 to-green-500 text-white rounded-md outline-none transition-all hover:scale-[1.01]"
                 >
                     Submit{" "}
                     <SendIcon className="text-base opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                </button>
+                </button> */}
             </form>
         </div>
     )

@@ -3,6 +3,8 @@ import './globals.css'
 import Footer from '@/components/Footer'
 import SmallBar from '@/components/SmallBar'
 import Navbar from '@/components/Navbar'
+import WhatsappChat from '@/components/WhatsappChat'
+import { Toaster } from 'react-hot-toast'
 
 const roboto = Roboto({ weight: ['100', '300', '400', '500', '700', '900'], subsets: ['latin'] })
 // const inter = Inter({ subsets: ['latin'] })
@@ -20,6 +22,8 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <WhatsappChat />
+        <Toaster position="top-right" />
       </body>
     </html>
   )

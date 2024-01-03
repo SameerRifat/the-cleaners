@@ -1,6 +1,10 @@
 import Services from '@/components/Services'
 import React from 'react'
 
+export const metadata = {
+    title: 'Services | TheCleaners',
+};
+
 const page = () => {
     return (
         <div className='pt-16 sm:pt-24 pb-40'>

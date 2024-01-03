@@ -186,7 +186,9 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="hidden md:flex">
-                    <Link href={`https://wa.me/${971557924200}`}
+                    <Link
+                        href='/contact'
+                        // href={`https://wa.me/${971557924200}`}
                         rel="noopener noreferrer"
                         className='bg_gradient px-3 py-2.5 font-semibold text-white rounded-md hover_bg_gradient shadow-lg hover:shadow-xl inline-block hover:scale-105'
                     // className="px-3 py-2.5 font-semibold border border-transparent bg-blue-500 text-white rounded-md shadow-md hover:bg-white hover:text-blue-500 hover:border hover:border-blue-500 transition-all outline-none hover:shadow-lg hover:scale-[1.03] inline-block"
