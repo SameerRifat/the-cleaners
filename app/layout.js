@@ -10,9 +10,14 @@ const roboto = Roboto({ weight: ['100', '300', '400', '500', '700', '900'], subs
 // const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'TheCleaners Cleaning Service in Dubai',
-  description: 'TheWashers Sofa Cleaning Service in Dubai',
+  title: 'TheCleaners UAE | Cleaning Services in Dubai',
+  description: 'Get top-notch cleaning services at TheCleaners UAE! Our expert team guarantees spotless and pristine results for your home or business Sharjah. Book your appointment today and enjoy a sparkling clean space!',
 }
+
+// export const metadata = {
+//   title: 'TheCleaners Cleaning Service in Dubai',
+//   description: 'TheWashers Sofa Cleaning Service in Dubai',
+// }
 
 export default function RootLayout({ children }) {
   return (

@@ -95,3 +95,8 @@ html, body {
     opacity: 0;
   }
 }
+
+
+.slick-arrow{
+  display: none !important;
+}
