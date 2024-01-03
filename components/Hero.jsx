@@ -138,7 +138,12 @@ const Hero = () => {
                         <SlideContent key={index} {...slide} />
                     ))}
                 </Slider>
-                <div className='w-full h-full absolute top-0 left-0 flex items-center'>
+                <div
+                    className='w-[70%] xxs:w-[65%] xs:w-[60%] lg:w-1/2 h-full absolute top-0 left-0 bg-white/50 rounded-tr-[70px] xs:rounded-tr-[200px] rounded-br-[70px] xs:rounded-br-[200px] blur-3xl'
+                >
+
+                </div>
+                <div className='w-full h-full absolute top-0 left-0 flex items-center z-[9999]'>
                     <div className='shared_container flex flex-col h-fit '>
                         <div className=' flex items-center gap-1 xs:gap-3'>
                             <span className='hidden xxs:block w-8 xs:w-14 sm:w-16 h-[1px] sm:h-0.5 rounded-full bg-black'></span>
