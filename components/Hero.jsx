@@ -139,7 +139,7 @@ const Hero = () => {
                     ))}
                 </Slider>
                 <div
-                    className='w-[70%] xxs:w-[65%] xs:w-[60%] lg:w-1/2 h-full absolute top-0 left-0 bg-white/50 rounded-tr-[70px] xs:rounded-tr-[200px] rounded-br-[70px] xs:rounded-br-[200px] blur-3xl'
+                    className='w-[60%] lg:w-1/2 h-full absolute top-0 left-0 bg-white/50 rounded-tr-[70px] xs:rounded-tr-[200px] rounded-br-[70px] xs:rounded-br-[200px] blur-3xl'
                 >
 
                 </div>
