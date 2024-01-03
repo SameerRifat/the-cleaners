@@ -9,7 +9,7 @@ export const servicesDetail = [
         banner1: '/houseCleaningBanner.jpg',
         banner2: '/housCleaning1.jpg',
         title: 'House Cleaning',
-        description: "Our comprehensive house cleaning service is more than just a tidying up – it's a commitment to your comfort and well-being. Picture a home where every nook and cranny is meticulously cleaned and sanitized, from the baseboards to the ceiling corners. Our professional cleaners don't just remove visible dirt; they eliminate allergens and bacteria, creating a healthy and welcoming environment for you and your family. Experience the luxury of living in a spotless and rejuvenated home with our top-notch house cleaning services.",
+        description: "Our comprehensive house cleaning <strong>service</strong> is more than just a tidying up – it's a commitment to your comfort and well-being. Picture a home where every nook and cranny is meticulously cleaned and sanitized, from the baseboards to the ceiling corners. Our professional cleaners don't just remove visible dirt; they eliminate allergens and bacteria, creating a healthy and welcoming environment for you and your family. Experience the luxury of living in a spotless and rejuvenated home with our top-notch house cleaning services.",
         features: [
             'Thorough dusting and wiping of surfaces',
             'Vacuuming carpets, rugs, and upholstery',
@@ -40,7 +40,7 @@ export const servicesDetail = [
         banner1: '/appartmentBanner.jpg',
         banner2: '/appartment.jpg',
         title: 'Appartment Cleaning',
-        description: 'Elevate your apartment living experience with our specialized cleaning service. We understand the unique needs of apartment dwellers, and our team tailors the cleaning approach accordingly. Imagine stepping into an apartment where every surface gleams, and every room exudes freshness. Our meticulous attention to detail ensures that no corner is overlooked. Enjoy the convenience and comfort of a clean and organized apartment with our expert cleaning services.',
+        description: 'Elevate your apartment living experience with our specialized cleaning <strong>service</strong>. We understand the unique needs of apartment dwellers, and our team tailors the cleaning approach accordingly. Imagine stepping into an apartment where every surface gleams, and every room exudes freshness. Our meticulous attention to detail ensures that no corner is overlooked. Enjoy the convenience and comfort of a clean and organized apartment with our expert cleaning services.',
         features: [
             'Apartment-wide dusting and cleaning',
             'Vacuuming carpets and rugs',
@@ -71,7 +71,7 @@ export const servicesDetail = [
         banner1: '/villaBanner2.jpg',
         banner2: '/villa2.jpg',
         title: 'Villa Cleaning',
-        description: 'Indulge in the luxury of spacious living with our villa cleaning service. Beyond standard cleaning, we offer a top-to-bottom approach that covers both the interior and exterior spaces of your villa. Our dedicated team ensures that your villa reflects the elegance it deserves, with special care given to high-end finishes and furnishings. Revel in the joy of living in a pristine and well-maintained villa with our expert cleaning solutions.',
+        description: 'Indulge in the luxury of spacious living with our villa cleaning <strong>service</strong>. Beyond standard cleaning, we offer a top-to-bottom approach that covers both the interior and exterior spaces of your villa. Our dedicated team ensures that your villa reflects the elegance it deserves, with special care given to high-end finishes and furnishings. Revel in the joy of living in a pristine and well-maintained villa with our expert cleaning solutions.',
         features: [
             'Comprehensive cleaning of all rooms and spaces',
             'Exterior cleaning including patios and balconies',
@@ -102,7 +102,7 @@ export const servicesDetail = [
         banner1: '/officeBanner1.jpg',
         banner2: '/office.jpg',
         title: 'Office Cleaning',
-        description: 'A clean and organized office is the cornerstone of a productive work environment. Our office cleaning service is tailored to meet the unique cleaning needs of commercial spaces. From workstations to meeting rooms, we go beyond surface cleaning to ensure a professional and inviting atmosphere for both employees and clients. Trust us to maintain the cleanliness of your office, promoting a positive and conducive workspace for everyone.',
+        description: 'A clean and organized office is the cornerstone of a productive work environment. Our office cleaning <strong>service</strong> is tailored to meet the unique cleaning needs of commercial spaces. From workstations to meeting rooms, we go beyond surface cleaning to ensure a professional and inviting atmosphere for both employees and clients. Trust us to maintain the cleanliness of your office, promoting a positive and conducive workspace for everyone.',
         features: [
             'Dusting and cleaning of desks and workstations',
             'Vacuuming carpets and common areas',
@@ -133,7 +133,7 @@ export const servicesDetail = [
         banner1: '/kitchenBanner.jpg',
         banner2: '/kitchen1.jpg',
         title: 'Kitchen Cleaning',
-        description: 'The kitchen is the heartbeat of any home, and our kitchen cleaning service ensures it beats with cleanliness and hygiene. Imagine a kitchen free from grease, grime, and harmful bacteria. Our team focuses on eliminating hidden dirt in appliances and hard-to-reach areas, providing you with a hygienic and spotless cooking space. Transform your kitchen into a clean and safe haven for culinary delights with our expert cleaning services.',
+        description: 'The kitchen is the heartbeat of any home, and our kitchen cleaning <strong>service</strong> ensures it beats with cleanliness and hygiene. Imagine a kitchen free from grease, grime, and harmful bacteria. Our team focuses on eliminating hidden dirt in appliances and hard-to-reach areas, providing you with a hygienic and spotless cooking space. Transform your kitchen into a clean and safe haven for culinary delights with our expert cleaning services.',
         features: [
             'Deep cleaning of kitchen appliances',
             'Degreasing and sanitizing countertops',
@@ -164,7 +164,7 @@ export const servicesDetail = [
         banner1: '/washroomBanner1.jpg',
         banner2: '/washroom1.jpg',
         title: 'Washroom Cleaning',
-        description: 'Maintain a clean and sanitary washroom with our specialized cleaning service. Our dedicated team pays attention to every detail, ensuring thorough cleaning and disinfection. From toilets and urinals to shower and bath areas, we leave no corner untouched. Experience a fresh and inviting atmosphere in your bathrooms, promoting a healthy and pleasant environment for all who use them.',
+        description: 'Maintain a clean and sanitary washroom with our specialized cleaning <strong>service</strong>. Our dedicated team pays attention to every detail, ensuring thorough cleaning and disinfection. From toilets and urinals to shower and bath areas, we leave no corner untouched. Experience a fresh and inviting atmosphere in your bathrooms, promoting a healthy and pleasant environment for all who use them.',
         features: [
             'Cleaning and disinfecting toilets and urinals',
             'Scrubbing and sanitizing shower and bath areas',
@@ -195,7 +195,7 @@ export const servicesDetail = [
         banner1: '/balconyBanner1.jpg',
         banner2: '/balcony1.jpg',
         title: 'Balcony Cleaning',
-        description: "Escape to the clean and comfortable retreat of your balcony with our specialized cleaning service. Whether you have a small apartment balcony or a spacious terrace, our team removes dust, debris, and stains to make it a haven for relaxation. Picture enjoying the outdoor space without worrying about cleanliness. We've got it covered, ensuring your balcony is a pristine extension of your living space.",
+        description: "Escape to the clean and comfortable retreat of your balcony with our specialized cleaning <strong>service</strong>. Whether you have a small apartment balcony or a spacious terrace, our team removes dust, debris, and stains to make it a haven for relaxation. Picture enjoying the outdoor space without worrying about cleanliness. We've got it covered, ensuring your balcony is a pristine extension of your living space.",
         features: [
             'Sweeping and cleaning balcony floors',
             'Wiping down railings and surfaces',
@@ -226,7 +226,7 @@ export const servicesDetail = [
         banner1: '/floorBanner.jpg',
         banner2: '/floor1.jpg',
         title: 'Floor Cleaning',
-        description: 'Maintain pristine and polished floors with our professional floor cleaning service. We cater to various flooring types, providing specialized care to ensure your floors look their best. From hardwood to carpets, our cleaning methods are tailored for each surface. Say goodbye to dirt, stains, and scuff marks, and revel in the clean and appealing floor surface throughout your home.',
+        description: 'Maintain pristine and polished floors with our professional floor cleaning <strong>service</strong>. We cater to various flooring types, providing specialized care to ensure your floors look their best. From hardwood to carpets, our cleaning methods are tailored for each surface. Say goodbye to dirt, stains, and scuff marks, and revel in the clean and appealing floor surface throughout your home.',
         features: [
             'Sweeping and mopping of hard floors',
             'Vacuuming carpets and rugs',
@@ -257,7 +257,7 @@ export const servicesDetail = [
         banner1: '/applianceBanner3.jpg',
         banner2: '/appliance1.jpg',
         title: 'Appliance Cleaning',
-        description: 'Extend the life of your appliances and keep them operating efficiently with our appliance cleaning service. We remove built-up dirt, dust, and grime, ensuring not only a clean appearance but also optimal functionality. From kitchen appliances to electronic devices, experience the benefits of well-maintained appliances in your home.',
+        description: 'Extend the life of your appliances and keep them operating efficiently with our appliance cleaning <strong>service</strong>. We remove built-up dirt, dust, and grime, ensuring not only a clean appearance but also optimal functionality. From kitchen appliances to electronic devices, experience the benefits of well-maintained appliances in your home.',
         features: [
             'Cleaning and degreasing kitchen appliances',
             'Dusting and sanitizing electronics',
@@ -312,7 +312,7 @@ export const servicesDetail = [
         banner1: '/deepBanner.jpg',
         banner2: '/deep1.jpg',
         title: 'Deep Cleaning',
-        description: 'Revitalize your living spaces with our deep cleaning service. Ideal for periodic or seasonal cleaning, our team goes beyond the surface to eliminate hidden dirt, allergens, and bacteria. Picture a home that feels brand new, with every corner thoroughly cleaned and refreshed. Experience a truly revitalized and rejuvenated home with our deep cleaning services.',
+        description: 'Revitalize your living spaces with our deep cleaning <strong>service</strong>. Ideal for periodic or seasonal cleaning, our team goes beyond the surface to eliminate hidden dirt, allergens, and bacteria. Picture a home that feels brand new, with every corner thoroughly cleaned and refreshed. Experience a truly revitalized and rejuvenated home with our deep cleaning services.',
         features: [
             'Thorough cleaning of all surfaces and spaces, including hidden areas',
             'Deep cleaning of carpets, upholstery, and drapes to remove allergens and stains',
@@ -336,7 +336,7 @@ export const servicesDetail = [
         banner1: '/ironingBanner1.jpg',
         banner2: '/ironing1.jpg',
         title: 'Ironing and Washing Clothes',
-        description: 'Keep your wardrobe looking sharp and well-maintained with our ironing and clothes washing service. Our experienced staff takes care of washing, ironing, and folding your clothes, ensuring they look freshly laundered and neatly pressed. Experience the convenience of professionally cared-for clothing, leaving you with more time to enjoy life.',
+        description: 'Keep your wardrobe looking sharp and well-maintained with our ironing and clothes washing <strong>service</strong>. Our experienced staff takes care of washing, ironing, and folding your clothes, ensuring they look freshly laundered and neatly pressed. Experience the convenience of professionally cared-for clothing, leaving you with more time to enjoy life.',
         features: [
             'Complete washing and drying of clothes using premium detergents',
             'Professional ironing and folding with attention to garment care labels',
@@ -366,7 +366,7 @@ export const servicesDetail = [
         banner1: '/MattressBanner.jpg',
         banner2: '/mattress1.jpg',
         title: 'Mattress Cleaning',
-        description: "Ensure a clean and healthy sleeping environment with our mattress cleaning service. We remove dust mites, allergens, and stains, leaving your mattress fresh and sanitized. Picture sinking into a bed that not only looks inviting but also promotes a good night's sleep. Experience the benefits of a thoroughly cleaned mattress for your overall well-being.",
+        description: "Ensure a clean and healthy sleeping environment with our mattress cleaning <strong>service</strong>. We remove dust mites, allergens, and stains, leaving your mattress fresh and sanitized. Picture sinking into a bed that not only looks inviting but also promotes a good night's sleep. Experience the benefits of a thoroughly cleaned mattress for your overall well-being.",
         features: [
             'Thorough vacuuming and deep cleaning of mattresses to remove dust mites and allergens',
             'Stain removal and spot treatment using specialized and effective cleaning agents',
@@ -396,7 +396,7 @@ export const servicesDetail = [
         banner1: '/rugsBanner.jpg',
         banner2: '/rugs3.jpg',
         title: 'Rugs Cleaning',
-        description: 'Restore the beauty and cleanliness of your carpets and rugs with our specialized cleaning service. We use effective cleaning methods to remove dirt, stains, and odors, leaving your carpets and rugs looking vibrant and refreshed. Imagine the feel of soft and freshly cleaned carpets underfoot, enhancing the overall aesthetic of your living space.',
+        description: 'Restore the beauty and cleanliness of your carpets and rugs with our specialized cleaning <strong>service</strong>. We use effective cleaning methods to remove dirt, stains, and odors, leaving your carpets and rugs looking vibrant and refreshed. Imagine the feel of soft and freshly cleaned carpets underfoot, enhancing the overall aesthetic of your living space.',
         features: [
             'Thorough vacuuming and pre-treatment of stains for effective cleaning',
             'Deep cleaning with professional-grade equipment to remove dirt, stains, and odors',

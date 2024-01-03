@@ -60,7 +60,8 @@ const ServiceDetail = ({ params }) => {
                 <div className='shared_container pt-10 pb-20 sm:py-20 w-full lg:w-[60%]'>
                     <h1 className='text-gray-800 xxxs:font-bold w-350:font-extrabold text-xl xxxs:text-2xl w-350:text-3xl xs:text-4xl mb-5'>{title} Service</h1>
                     {/* <img src={imgSrc} alt={`${title} Image`} /> */}
-                    <p className='text-gray-700 leading-relaxed text-sm xxxs:text-base'>{description}</p>
+                    {/* <p className='text-gray-700 leading-relaxed text-sm xxxs:text-base'>{description}</p> */}
+                    <p className='text-gray-700 leading-relaxed text-sm xxxs:text-base' dangerouslySetInnerHTML={{ __html: description }} />
 
                     <div className='mt-10 sm:mt-14'>
                         <h2 className='text-xl font-bold'>Key Features</h2>
