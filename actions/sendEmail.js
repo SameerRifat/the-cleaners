@@ -64,7 +64,7 @@ export const sendEmail = async (formData) => {
             // from: "TheWashers <info@thewashersuae.com>",
             from: "TheCleaners <onboarding@resend.dev>",
             // to: "info@thewashersuae.com",
-            to: "sameerrifat96@gmail.com",
+            to: "sameerrifat0@gmail.com",
             // yousafejaz40@gmail.com
             subject: "Message from contact form",
             reply_to: senderEmail,

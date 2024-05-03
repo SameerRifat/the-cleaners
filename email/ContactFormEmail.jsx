@@ -17,7 +17,7 @@ const ContactFormEmail = ({ message, senderEmail, senderName, senderPhone, servi
   return (
     <Html>
       <Head />
-      <Preview>New message from TheCleaners site</Preview>s
+      <Preview>New message from TheCleaners site</Preview>
       <Tailwind>
         <Body className="bg-gray-100">
           <Container>

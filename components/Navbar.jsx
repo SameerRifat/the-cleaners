@@ -117,10 +117,10 @@ const Navbar = () => {
                 </div>
                 <div className="hidden lg:flex lg:flex-1 justify-center items-center h-full">
                     <div className='space-x-10 text-base flex items-center'>
-                        {navigation.map((navLink) => {
+                        {navigation.map((navLink, ind) => {
                             if (navLink.children) {
                                 return (
-                                    <div className="">
+                                    <div className="" key={ind}>
                                         <Link
                                             href={navLink.href.toLowerCase()}
                                             onMouseEnter={() => setOpen2(true)}
@@ -238,7 +238,7 @@ const Navbar = () => {
                             if (navLink.children) {
                                 return (
                                     <>
-                                        <div className="flex w-full items-center justify-between rounded-md hover:bg-gray-50 px-2 py-3"
+                                        <div key={index} className="flex w-full items-center justify-between rounded-md hover:bg-gray-50 px-2 py-3"
                                         >
                                             <Link
                                                 href={navLink.href.toLowerCase()}
@@ -257,9 +257,10 @@ const Navbar = () => {
                                         <Collapse in={open === index} timeout="auto" unmountOnExit>
                                             <div className="pl-3">
                                                 <div className="space-y-1">
-                                                    {navLink.children.map((child) => (
+                                                    {navLink.children.map((child, ind) => (
                                                         // <div key={child.id} className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover:text-blue-500 w-full h-full">
                                                         <Link
+                                                            key={ind}
                                                             href={child.href.toLowerCase()}
                                                             onClick={() => setOpenSidebar(false)}
                                                             className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover_text_gradient w-full h-full rounded-md"
