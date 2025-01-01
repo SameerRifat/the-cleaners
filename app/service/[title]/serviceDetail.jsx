@@ -4,7 +4,6 @@ import {servicesDetail } from '@/data/servicesData';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive';
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import DoneIcon from '@mui/icons-material/Done';
 
 

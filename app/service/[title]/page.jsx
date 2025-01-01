@@ -1,6 +1,5 @@
 import React from 'react'
 import ServiceDetail from './serviceDetail'
-import { Metadata } from 'next'
 
 export async function generateMetadata({ params }) {
     return {
