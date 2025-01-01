@@ -1,8 +1,6 @@
 'use client'
 
 import WhyChooseUs from '@/components/WhyChooseUs';
-// import { metadata } from '@/data/servicesData';
-// import Head from 'next/head';
 import Image from 'next/image'
 import React from 'react'
 import { useMediaQuery } from 'react-responsive';
@@ -27,21 +25,16 @@ const About = () => {
 
     return (
         <>
-            {/* <Head>
-                <title>About Us - {metadata.title}</title>
-                <meta name="description" content={`Learn about TheCleaners: ${metadata.description}`} />
-            </Head> */}
             <div className='relative'>
-                <div className='h-[30vh] xxs:h-[40vh] sm:h-[60vh] w-full relative'>
+                <div className='aspect-[1900/500] min-h-[40vh] max-h-[60vh] 2xl:max-h-[55vh] w-full relative'>
                     <Image
                         src={sm ? '/about4-4.png' : '/about4.jpg'}
-                        // src='/about4.jpg'
                         alt="banner"
                         width={1200}
                         height={1000}
                         quality={95}
                         priority={true}
-                        className='max-w-full w-full h-full -z-50'
+                        className='max-w-full w-full h-full -z-50 object-cover object-right'
                     />
                     <div className='absolute top-0 left-0 w-full h-full z-50 flex items-center'>
                         <div className='shared_container w-full h-fit flex flex-col justify-end text-white'>
@@ -58,12 +51,6 @@ const About = () => {
                                     Highly trained staff, over 5 years of experience, and wide-ranging residential and commercial cleaning services – TheCleaners takes care of all your cleaning needs!
                                 </span>
                                 <span className='hidden md:flex flex-col'>
-                                    {/* {
-                                    `Highly trained staff, over 5 years of experience, and wide-ranging
-                                    residential and commercial cleaning services – TheCleaners
-                                    takes care of all your cleaning needs!
-                                    `
-                                } */}
                                     Highly trained staff, over 5 years of experience, and wide-ranging {" "}
                                     <span className=''>residential and commercial cleaning services – TheCleaners</span>
                                     <span className=''>takes care of all your cleaning needs!</span>

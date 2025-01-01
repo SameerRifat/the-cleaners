@@ -16,7 +16,6 @@ const WhatsappChat = () => {
                     href={`https://wa.me/${971581249910}`}
                     target='_blank'
                     rel="noopener noreferrer"
-                    // className='bg-green-500 p-3 rounded-full flex justify-center items-center shadow-lg hover:bg-green-600 hover:shadow-lg hover:scale-110 transition-all'
                     className='wtsapp'
                 >
                     <WhatsAppIcon className='text-white' fontSize='large' />

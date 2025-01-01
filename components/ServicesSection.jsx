@@ -24,7 +24,6 @@ const ServicesSection = () => {
             <div className='relative w-full h-[550px] xxxs:h-[600px] sm:h-[700px]'>
                 <Image
                     src={md ? '/wave-new4.png' : '/wave-new.png'}
-                    // src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-new.png')}
                     alt="background image"
                     width={1200}
                     height={1000}
@@ -45,83 +44,11 @@ const ServicesSection = () => {
                             <h2 className='text-white font-semibold sm:font-bold md:font-extrabold text-xl xxxs:text-2xl xs:text-3xl sm:text-3xl md:text-4xl mt-1 xxxs:mt-2 md:mt-4'>
                                 Offering Best Cleaning Services in Sharjah
                             </h2>
-                            {/* <div className='mt-1 xs:mt-2'>
-                                <h4 className='text-base xxxs:text-lg font-medium sm:font-semibold text-white my-1'>
-                                    Targeted Areas:
-                                </h4>
-                                <div className='flex items-center gap-y-2 gap-x-3 xxs:gap-x-5 text-white flex-wrap'>
-                                    <div className='font-medium sm:font-semibold text-sm xxxs:text-lg  xxs:text-xl flex items-center gap-0.5 xxs:gap-1'>
-                                        <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
-                                        <span>Sharjah</span>
-                                    </div>
-                                    <div className='font-medium sm:font-semibold text-sm xxxs:text-lg  xxs:text-xl flex items-center gap-0.5 xxs:gap-1'>
-                                        <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
-                                        <span>UAE</span>
-                                    </div>
-                                    <div className='font-medium sm:font-semibold text-sm xxxs:text-lg  xxs:text-xl flex items-center gap-0.5 xxs:gap-1'>
-                                        <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
-                                        <span>Ajman</span>
-                                    </div>
-                                </div>
-                            </div> */}
                         </div>
                         <div className=' text-gray-100 text-xs xxxs:text-sm sm:text-base'>
                             Welcome to <span className='font-medium'>TheCleaners</span> Cleaning Services, your one-stop-shop for all your cleaning needs in Sharjah. Our team of highly skilled professionals offers a complete range of cleaning services for all types of properties, including apartments, houses, small businesses, and multi-floor commercial properties. We take pride in delivering high-quality cleaning services that leave your space sparkling clean and fresh.
                         </div>
-                        <div 
-                            // className='block sm:hidden lg:block my-10 mb-14 sm:my-0'
-                        >
-                            {/* <h4 className='text-base xxxs:text-lg font-medium sm:font-semibold text-white '>
-                                Targeted Areas:
-                            </h4>
-                            <div className='flex items-center gap-3 font-semibold'>
-                                <PlaceIcon className='text-white' fontSize={xxs ? 'small' : (xs ? 'medium' : 'large')} />
-                                <span className='text-lg text-white'>Sharjah</span>
-                            </div> */}
-                            {/* <div className='flex items-center gap-2 xxs:gap-5 text-white flex-wrap justify-center'>
-                            </div> */}
-                                {/* <div className='w-fit relative'>
-                                    <Image
-                                        src='/location7.png'
-                                        // src={xxs ? '/wave-lg3.png' : (xs ? '/wave-lg2.png' : '/wave-lg.png')}
-                                        alt="background image"
-                                        width={500}
-                                        height={500}
-                                        quality={95}
-                                        priority={true}
-                                        className='max-w-full w-64 xxs:w-80'
-                                    />
-                                    <div className='absolute -bottom-8 xs:-bottom-10 w-full text-center flex justify-center'>
-                                        <h4 className='text-xs xxxs:text-sm xs:text-base font-medium text-white my-1'>
-                                            Our Targeted Cities in UAE
-                                        </h4>
-                                    </div>
-                                </div> */}
-                                {/* <div className='mt-1 xxs:mt-2 font-medium sm:font-semibold text-sm xxxs:text-lg  flex items-center gap-0.5 xxs:gap-1 bg-blue-900/20 shadow-xl backdrop-blur-[10rem] p-1.5 xxxs:p-[6.2px] w-350:p-3 xxs:p-4 rounded-lg'>
-                                    <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
-                                    <span>Sharjah</span>
-                                </div>
-                                <div className='font-medium sm:font-semibold text-sm xxxs:text-lg  flex items-center gap-0.5 xxs:gap-1 bg-blue-900/20 shadow-xl backdrop-blur-[10rem] p-1.5 xxxs:p-[6.2px] w-350:p-3 xxs:p-4 rounded-lg'>
-                                    <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
-                                    <span>UAE</span>
-                                </div>
-                                <div className='font-medium sm:font-semibold text-sm xxxs:text-lg  flex items-center gap-0.5 xxs:gap-1 bg-blue-900/20 shadow-xl backdrop-blur-[10rem] p-1.5 xxxs:p-[6.2px] w-350:p-3 xxs:p-4 rounded-lg'>
-                                    <PlaceIcon className='text-theme-yellow-500' fontSize='small' />
-                                    <span>Ajman</span>
-                                </div> */}
-                            {/* <div className='bg-blue-500 flex justify-center items-center p-2 xs:p-4 rounded-full'>
-                                <PhoneIcon fontSize={isSmallScreen ? 'medium' : 'large'}
-                                    className='text-white'
-                                />
-                            </div>
-                            <div>
-                                <h3 className='text-base xxxs:text-lg xs:text-xl text-white mb-1 xs:mb-2'>Call us anytime</h3>
-                                <Link href='tel:+971557924200' rel="noopener noreferrer"
-                                    className="text-white font-medium xxxs:font-semibold xs:font-extrabold text-lg xxxs:text-xl xs:text-2xl cursor-pointer"
-                                >
-                                    +971 58 124 9910
-                                </Link>
-                            </div> */}
+                        <div>
                         </div>
                     </div>
                 </div>
