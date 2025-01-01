@@ -22,7 +22,7 @@ const SlideContent = ({ image }) => {
                 height={1000}
                 quality={95}
                 priority={true}
-                className='max-w-full w-full h-full -z-50 object-cover object-right'
+                className='max-w-full w-full h-full -z-50 object-cover object-[80%_50%]'
             />
         </div>
     );
