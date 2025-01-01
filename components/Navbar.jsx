@@ -112,7 +112,6 @@ const Navbar = () => {
                 <div className="">
                     <Link href='/'>
                         <Image src="/logo3.png" alt="Logo" width={150} height={100} className='max-w-full w-[80px] xxxs:w-[90px] xxs:w-28 sm:w-32 h-auto' />
-                        {/* <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2> */}
                     </Link>
                 </div>
                 <div className="hidden lg:flex lg:flex-1 justify-center items-center h-full">
@@ -150,8 +149,6 @@ const Navbar = () => {
                                                 <div className="grid grid-cols-2 gap-x-5 gap-y-3 p-5">
                                                     {navLink.children.map((child) => {
                                                         return (
-                                                            // <div className="flex items-center border border-red-500" key={child.id}>
-                                                            // <ArrowRightIcon />
                                                             <Link
                                                                 key={child.id}
                                                                 href={child.href.toLowerCase()}
@@ -161,7 +158,6 @@ const Navbar = () => {
                                                                 <ArrowRightIcon className='group-hover:text-blue-500' />
                                                                 {child.title}
                                                             </Link>
-                                                            // </div>
                                                         )
                                                     })}
                                                 </div>
@@ -188,10 +184,8 @@ const Navbar = () => {
                 <div className="hidden lg:flex">
                     <Link
                         href='/contact'
-                        // href={`https://wa.me/${971557924200}`}
                         rel="noopener noreferrer"
                         className='bg_gradient px-3 py-2.5 font-semibold text-white rounded-md hover_bg_gradient shadow-lg hover:shadow-xl inline-block hover:scale-105'
-                    // className="px-3 py-2.5 font-semibold border border-transparent bg-blue-500 text-white rounded-md shadow-md hover:bg-white hover:text-blue-500 hover:border hover:border-blue-500 transition-all outline-none hover:shadow-lg hover:scale-[1.03] inline-block"
                     >
                         Conact Now
                     </Link>
@@ -209,21 +203,14 @@ const Navbar = () => {
                     sx: {
                         width: isSmallScreen ? '100%' : 270,
                         border: '0 !important',
-                        // boxShadow: (theme) => theme.shadows[8],
                         padding: '24px'
                     },
                 }}
             >
                 <div className="flex items-center justify-between">
                     <div className='flex items-start justify-start w-20'>
-                        {/* <Link href='/' className=' w-full h-full relative'> */}
                         <Image src="/logo3.png" alt="Logo" quality={95} priority={true} width={150} height={100} className='max-w-full w-full h-auto' />
-                        {/* <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2> */}
-                        {/* </Link> */}
                     </div>
-                    {/* <Link href='/' className="-m-1.5 p-1.5" onClick={() => setOpen(false)}>
-                            <h2 className='font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2>
-                        </Link> */}
                     <button
                         type="button"
                         className="-m-2.5 rounded-md p-2.5 text-gray-700 self-start"
@@ -237,9 +224,8 @@ const Navbar = () => {
                         {navigation.map((navLink, index) => {
                             if (navLink.children) {
                                 return (
-                                    <>
-                                        <div key={index} className="flex w-full items-center justify-between rounded-md hover:bg-gray-50 px-2 py-3"
-                                        >
+                                    <div key={index}>
+                                        <div className="flex w-full items-center justify-between rounded-md hover:bg-gray-50 px-2 py-3">
                                             <Link
                                                 href={navLink.href.toLowerCase()}
                                                 className="font-semibold hover_text_gradient text-base"
@@ -258,7 +244,6 @@ const Navbar = () => {
                                             <div className="pl-3">
                                                 <div className="space-y-1">
                                                     {navLink.children.map((child, ind) => (
-                                                        // <div key={child.id} className="flex items-center text-sm py-2 px-2 font-normal hover:bg-slate-50 hover:text-blue-500 w-full h-full">
                                                         <Link
                                                             key={ind}
                                                             href={child.href.toLowerCase()}
@@ -267,12 +252,11 @@ const Navbar = () => {
                                                         >
                                                             {child.title}
                                                         </Link>
-                                                        // </div>
                                                     ))}
                                                 </div>
                                             </div>
                                         </Collapse>
-                                    </>
+                                    </div>
                                 )
                             } else {
                                 return (

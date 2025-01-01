@@ -60,21 +60,16 @@ const Contact = () => {
 
     return (
         <>
-            {/* <Head>
-                <title>Contact - {metadata.title}</title>
-                <meta name="description" content={`Contact TheCleaners: ${metadata.description}`} />
-            </Head> */}
             <div className='relative'>
-                <div key={forceRerender} className='h-[30vh] xxs:h-[40vh] sm:h-[50vh] w-full relative'>
+                <div key={forceRerender} className='aspect-[3124/1000] min-h-[40vh] max-h-[60vh] 2xl:max-h-[55vh] w-full relative'>
                     <Image
                         src={sm ? '/cu3-3.png' : '/cu3.jpg'}
-                        // src='/cu3.jpg'
                         alt="banner"
                         width={1200}
                         height={1000}
                         quality={95}
                         priority={true}
-                        className='max-w-full w-full h-full -z-50'
+                        className='max-w-full w-full h-full -z-50 object-cover object-right'
                     />
                     <div className='absolute top-0 left-0 w-full h-full z-50 flex items-center'>
                         <div className='shared_container w-full h-fit flex flex-col justify-end text-white'>
@@ -133,7 +128,7 @@ const Contact = () => {
                                 <div className=' flex flex-col gap-5'>
                                     {contactInfo.map((item, ind) => {
                                         return (
-                                            <div className='flex items-center gap-4'>
+                                            <div className='flex items-center gap-4' key={ind}>
                                                 <span>
                                                     <item.icon
                                                         className='text-green-600'

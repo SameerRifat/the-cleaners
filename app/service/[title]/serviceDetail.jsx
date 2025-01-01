@@ -4,7 +4,6 @@ import {servicesDetail } from '@/data/servicesData';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive';
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import DoneIcon from '@mui/icons-material/Done';
 
 
@@ -25,20 +24,15 @@ const ServiceDetail = ({ params }) => {
 
     return (
         <>
-            {/* <Head>
-                <title>{`${title} - ${metadata.title}`}</title>
-                <meta name="description" content={`Details about ${service.title} service: ${metadata.description}`} />
-            </Head> */}
-            <div className='h-[20vh] xxxs:h-[30vh] xxs:h-[40vh] sm:h-[50vh] lg:h-[60vh] w-full relative as'>
+            <div className='aspect-[3000/1000] min-h-[40vh] max-h-[60vh] 2xl:max-h-[55vh] w-full relative'>
                 <Image
                     src={sm ? banner2 : banner1}
-                    // src={banner1}
                     alt={`${title} Image`}
                     width={1200}
                     height={1000}
                     quality={95}
                     priority={true}
-                    className='max-w-full w-full h-full -z-50'
+                    className='max-w-full w-full h-full -z-50 object-cover'
                     key={forceRerender}
                 />
                 <div className='absolute top-0 left-0 w-full h-full z-50 flex items-center'>
@@ -59,8 +53,6 @@ const ServiceDetail = ({ params }) => {
             <div className='bg-white'>
                 <div className='shared_container pt-10 pb-20 sm:py-20 w-full lg:w-[60%]'>
                     <h1 className='text-gray-800 xxxs:font-bold w-350:font-extrabold text-xl xxxs:text-2xl w-350:text-3xl xs:text-4xl mb-5'>{title} Service</h1>
-                    {/* <img src={imgSrc} alt={`${title} Image`} /> */}
-                    {/* <p className='text-gray-700 leading-relaxed text-sm xxxs:text-base'>{description}</p> */}
                     <p className='text-gray-700 leading-relaxed text-sm xxxs:text-base' dangerouslySetInnerHTML={{ __html: description }} />
 
                     <div className='mt-10 sm:mt-14'>
